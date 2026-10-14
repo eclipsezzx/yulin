@@ -5,7 +5,7 @@ YL.interact={
  async unfold(step,scope){
   this.ready(step);const A=YL.art,svg=YL.game.svg,g=A.svg('g',{'data-task':'unfold'},svg),x=32,y=360,w=311,h=151;const defs=A.svg('defs',{},g),clip=A.svg('clipPath',{id:'unfoldClip'},defs),rect=A.svg('rect',{x,y,width:12,height:h},clip);
   const inner=A.svg('g',{'clip-path':'url(#unfoldClip)'},g);A.svg('path',{d:`M${x} ${y+3}L${x+90} ${y}L${x+185} ${y+3}L${x+w} ${y}L${x+w} ${y+h-3}L${x+180} ${y+h}L${x+60} ${y+h-2}L${x} ${y+h}Z`,fill:'url(#redPaper)',filter:'url(#paperLift)'},inner);
-  const txt=A.svg('text',{x:x+w/2,y:y+h-17,'text-anchor':'middle','font-size':12,fill:'#F4EBDD'},inner);txt.style.fill='#F4EBDD';txt.textContent='榆林剪纸 · 手工红纸';
+  const txt=A.svg('text',{x:x+w/2,y:y+h-17,'text-anchor':'middle','font-size':12,fill:'#F4EBDD'},inner);txt.style.fill='#F4EBDD';txt.textContent='陕北纸艺 · 剪去与留下';
   const fixed=A.svg('g',{},g),grip=A.svg('g',{class:'unfold-grip',role:'slider',tabindex:0,'aria-label':'展开纸张','aria-valuemin':0,'aria-valuemax':100,'aria-valuenow':0},g);
   const roller=parent=>{A.svg('rect',{x:-4,y:y-8,width:8,height:h+16,rx:3,fill:'#BC8D4D',stroke:'#24221E','stroke-width':.5},parent);A.svg('path',{d:`M-6 ${y-9}H6M-6 ${y+h+9}H6`,stroke:'#24221E','stroke-width':3},parent);};roller(fixed);fixed.setAttribute('transform',`translate(${x},0)`);roller(grip);A.svg('rect',{x:-23,y:y-22,width:46,height:h+44,fill:'transparent'},grip);
   const arrow=A.svg('text',{x:0,y:y+h/2,'text-anchor':'middle','font-size':18},grip);arrow.textContent='›';
