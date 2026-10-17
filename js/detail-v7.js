@@ -48,7 +48,7 @@ const detailImage=YL.art.image.bind(YL.art);YL.art.image=function(parent,key,box
 YL.heritage.places[2].after='偏白的残墙仍立在沙地边。城墙的断口与突出的墩台，留下了统万城曾经的尺度。';
 YL.heritage.places[3].hint='沿层层檐线起落剪，留出渐收的塔身';
 // Keep the directory title on the page paper; remove the extra current-chapter line.
-const detailMap=YL.game.map.bind(YL.game);YL.game.map=async function(){await detailMap();const p=YL.$('.map-heading>p:last-child');if(p&&!p.classList.contains('chapter-label'))p.remove();const title=YL.$('[data-chapter="1"] strong');if(title)title.textContent='山河遗迹';};
-YL.heritage.chapter.name='山河遗迹';
+const detailMap=YL.game.map.bind(YL.game);YL.game.map=async function(){await detailMap();const p=YL.$('.map-heading>p:last-child');if(p&&!p.classList.contains('chapter-label'))p.remove();const title=YL.$('[data-chapter="1"] strong');if(title)title.textContent='山河往事';};
+YL.heritage.chapter.name='山河往事';
 YL.route.background=function(key){const image=YL.$('#fold-scene');image.classList.remove('window-arrive');image.className='scene-art scene-'+key;image.src=`assets/${key==='route-paper'?'v6':'v7'}/${key}.webp?v=${this.version}`;image.alt=key==='route-paper'?'北向上的陕北文化旅程示意':'依据当地实景环境重绘的陕北纸艺插画';};
 YL.route.materials.pagoda.target.y=312;

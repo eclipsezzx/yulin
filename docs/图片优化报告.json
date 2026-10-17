@@ -1,1100 +1,814 @@
 {
-  "summary": {
-    "version": "20261017-web1",
-    "images": 67,
-    "images_before_bytes": 9777248,
-    "images_after_bytes": 7660064,
-    "original_all_images_before_bytes": 16111136,
-    "original_all_images_after_bytes": 12908434,
-    "image_reduction_percent": 21.7,
-    "fonts": [
-      {
-        "font": "home-title",
-        "bytes": 2100,
-        "glyphs": 4,
-        "source": "title.woff2"
-      },
-      {
-        "font": "home-song",
-        "bytes": 36132,
-        "glyphs": 136,
-        "source": "Google Fonts · Noto Serif SC official subset",
-        "url": "https://fonts.gstatic.com/l/font?kit=H4chBXePl9DZ0Xe7gG9cyOj7oqOEvTFLN_szR5Fszy2G86HFWAOscXf4s2_-49C8Wo9Snm93ci5Tq5xOPkc0Noh1-1-dTOfYirAxvqYzCwgJ1WK56CD1c9f5PkMAYMiakER6WzrZVcw1bw5ga6pOaW2-Hl99s604DWywF1N3I8B2uFMeX0MhGU8-5o2Ss_4gomXKDRM77nDXGmG2lgRIN9BHsH-Mo9tG_h3kCL1rTYD15rvF3cHH8FMYbsmdwmX8pQ1LCnvkfnQS8rdWxn9L9AADlJBdaa5jAsG4R-XPA68WJGViI2xoSEizq7Gz&skey=37fe335b8fd815cc&v=v36"
-      }
-    ]
-  },
+  "version": "20261017-web2",
+  "source": "flow1 pre-compression original; no repeated lossy encoding",
+  "count": 67,
+  "before_bytes": 7660064,
+  "after_bytes": 4382486,
   "images": [
     {
       "path": "assets/cloud.webp",
-      "before": 101686,
-      "after": 97558,
-      "original_size": [
-        600,
-        359
-      ],
+      "before": 97558,
+      "after": 89286,
       "size": [
         600,
         359
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 45.81
+      "quality": 68,
+      "psnr_resized_original": 40.91
     },
     {
       "path": "assets/cover-clean-v4.webp",
-      "before": 224716,
-      "after": 207028,
-      "original_size": [
-        750,
-        1333
-      ],
+      "before": 207028,
+      "after": 121342,
       "size": [
-        750,
-        1333
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 37.5
+      "quality": 65,
+      "psnr_resized_original": 31.4
     },
     {
       "path": "assets/cover-clean.webp",
-      "before": 236270,
-      "after": 219836,
-      "original_size": [
-        750,
-        1333
-      ],
+      "before": 219836,
+      "after": 129476,
       "size": [
-        750,
-        1333
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 37.43
+      "quality": 65,
+      "psnr_resized_original": 31.28
     },
     {
       "path": "assets/cover-reference-v4.webp",
-      "before": 231178,
-      "after": 214206,
-      "original_size": [
-        750,
-        1333
-      ],
+      "before": 214206,
+      "after": 126988,
       "size": [
-        750,
-        1333
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 37.46
+      "quality": 65,
+      "psnr_resized_original": 31.42
     },
     {
       "path": "assets/cover-reference.webp",
-      "before": 246702,
-      "after": 227992,
-      "original_size": [
-        750,
-        1333
-      ],
+      "before": 227992,
+      "after": 132890,
       "size": [
-        750,
-        1333
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 37.26
+      "quality": 65,
+      "psnr_resized_original": 31.18
     },
     {
       "path": "assets/cover-shanbei-v3.webp",
-      "before": 194620,
-      "after": 178818,
-      "original_size": [
-        750,
-        1333
-      ],
+      "before": 178818,
+      "after": 104150,
       "size": [
-        750,
-        1333
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 37.97
+      "quality": 65,
+      "psnr_resized_original": 31.78
     },
     {
       "path": "assets/cover.webp",
-      "before": 260418,
-      "after": 245878,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 245878,
+      "after": 138100,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 37.92
+      "quality": 65,
+      "psnr_resized_original": 31.07
     },
     {
       "path": "assets/dancer.webp",
-      "before": 63010,
-      "after": 62662,
-      "original_size": [
-        400,
-        600
-      ],
+      "before": 62662,
+      "after": 54572,
       "size": [
         400,
         600
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 40.87
+      "quality": 68,
+      "psnr_resized_original": 36.13
     },
     {
       "path": "assets/fan.webp",
       "before": 101162,
-      "after": 101162,
-      "original_size": [
-        600,
-        427
-      ],
+      "after": 89032,
       "size": [
         600,
         427
       ],
       "alpha": true,
-      "quality": "original",
-      "psnr_resized_reference_db": 99
+      "quality": 68,
+      "psnr_resized_original": 33.73
     },
     {
       "path": "assets/flower.webp",
-      "before": 185814,
-      "after": 178578,
-      "original_size": [
-        600,
-        559
-      ],
+      "before": 178578,
+      "after": 163084,
       "size": [
         600,
         559
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 44.02
+      "quality": 68,
+      "psnr_resized_original": 39.73
     },
     {
       "path": "assets/frontier.webp",
-      "before": 217016,
-      "after": 198400,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 198400,
+      "after": 111358,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 38.58
+      "quality": 65,
+      "psnr_resized_original": 31.75
     },
     {
       "path": "assets/homes-v2.webp",
-      "before": 209320,
-      "after": 193930,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 193930,
+      "after": 111272,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 38.65
+      "quality": 65,
+      "psnr_resized_original": 31.91
     },
     {
       "path": "assets/homes.webp",
-      "before": 144148,
-      "after": 133094,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 133094,
+      "after": 75392,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 40.25
+      "quality": 65,
+      "psnr_resized_original": 33.63
     },
     {
       "path": "assets/musician.webp",
       "before": 61710,
-      "after": 61710,
-      "original_size": [
-        283,
-        600
-      ],
+      "after": 54630,
       "size": [
         283,
         600
       ],
       "alpha": true,
-      "quality": "original",
-      "psnr_resized_reference_db": 99
+      "quality": 68,
+      "psnr_resized_original": 35.08
     },
     {
       "path": "assets/paper.webp",
-      "before": 3526,
-      "after": 2190,
-      "original_size": [
-        512,
-        512
-      ],
+      "before": 2190,
+      "after": 820,
       "size": [
-        512,
-        512
+        384,
+        384
       ],
       "alpha": false,
-      "quality": 74,
-      "psnr_resized_reference_db": 48.31
+      "quality": 64,
+      "psnr_resized_original": 44.8
     },
     {
       "path": "assets/prologue.webp",
-      "before": 125632,
-      "after": 110730,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 110730,
+      "after": 62304,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 39.78
+      "quality": 65,
+      "psnr_resized_original": 34.0
     },
     {
       "path": "assets/red-paper.webp",
-      "before": 3882,
-      "after": 3612,
-      "original_size": [
-        256,
-        256
-      ],
+      "before": 3612,
+      "after": 3306,
       "size": [
         256,
         256
       ],
       "alpha": false,
-      "quality": 74,
-      "psnr_resized_reference_db": 43.58
+      "quality": 64,
+      "psnr_resized_original": 40.82
     },
     {
       "path": "assets/ribbon.webp",
-      "before": 36270,
-      "after": 35142,
-      "original_size": [
-        600,
-        385
-      ],
+      "before": 35142,
+      "after": 30114,
       "size": [
         600,
         385
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 43.9
+      "quality": 68,
+      "psnr_resized_original": 38.9
     },
     {
       "path": "assets/scissors.webp",
-      "before": 68260,
-      "after": 65726,
-      "original_size": [
-        530,
-        518
-      ],
+      "before": 65726,
+      "after": 55930,
       "size": [
         530,
         518
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 43.18
+      "quality": 68,
+      "psnr_resized_original": 36.99
     },
     {
       "path": "assets/scroll-landscape.webp",
-      "before": 157782,
-      "after": 153548,
-      "original_size": [
-        1000,
-        563
-      ],
+      "before": 153548,
+      "after": 124672,
       "size": [
         1000,
         563
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 38.91
+      "quality": 68,
+      "psnr_resized_original": 33.42
     },
     {
       "path": "assets/sound.webp",
-      "before": 201850,
-      "after": 183460,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 183460,
+      "after": 105464,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 38.59
+      "quality": 65,
+      "psnr_resized_original": 32.33
     },
     {
       "path": "assets/suona.webp",
-      "before": 37280,
-      "after": 37200,
-      "original_size": [
-        600,
-        383
-      ],
+      "before": 37200,
+      "after": 31970,
       "size": [
         600,
         383
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 43.52
+      "quality": 68,
+      "psnr_resized_original": 37.4
     },
     {
       "path": "assets/tower.webp",
       "before": 92190,
-      "after": 92190,
-      "original_size": [
-        578,
-        475
-      ],
+      "after": 80174,
       "size": [
         578,
         475
       ],
       "alpha": true,
-      "quality": "original",
-      "psnr_resized_reference_db": 99
+      "quality": 68,
+      "psnr_resized_original": 34.98
     },
     {
       "path": "assets/v10/table-scene.webp",
-      "before": 183346,
-      "after": 158558,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 158558,
+      "after": 71052,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 38.88
+      "quality": 65,
+      "psnr_resized_original": 33.73
     },
     {
       "path": "assets/v11/drum-courtyard.webp",
-      "before": 139860,
-      "after": 114846,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 114846,
+      "after": 63322,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 39.26
+      "quality": 65,
+      "psnr_resized_original": 34.52
     },
     {
       "path": "assets/v11/drum-pad.webp",
-      "before": 73144,
-      "after": 59922,
-      "original_size": [
-        850,
-        452
-      ],
+      "before": 59922,
+      "after": 31444,
       "size": [
-        800,
-        425
+        600,
+        319
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 39.3
+      "quality": 68,
+      "psnr_resized_original": 36.3
     },
     {
       "path": "assets/v11/waist-drum.webp",
-      "before": 83420,
-      "after": 67692,
-      "original_size": [
-        850,
-        427
-      ],
+      "before": 67692,
+      "after": 33666,
       "size": [
-        800,
-        402
+        600,
+        301
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 36.71
+      "quality": 68,
+      "psnr_resized_original": 33.5
     },
     {
       "path": "assets/v11/waist-player-leap.webp",
-      "before": 121202,
-      "after": 93084,
-      "original_size": [
-        650,
-        950
-      ],
+      "before": 93084,
+      "after": 50512,
       "size": [
-        547,
-        800
+        411,
+        600
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 37.92
+      "quality": 68,
+      "psnr_resized_original": 34.74
     },
     {
       "path": "assets/v11/waist-player-ready.webp",
-      "before": 150994,
-      "after": 111596,
-      "original_size": [
-        800,
-        950
-      ],
+      "before": 111596,
+      "after": 57970,
       "size": [
-        674,
-        800
+        505,
+        600
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 37.6
+      "quality": 68,
+      "psnr_resized_original": 34.54
     },
     {
       "path": "assets/v11/waist-player-strike.webp",
-      "before": 146142,
-      "after": 109074,
-      "original_size": [
-        636,
-        950
-      ],
+      "before": 109074,
+      "after": 57756,
       "size": [
-        536,
-        800
+        402,
+        600
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 36.74
+      "quality": 68,
+      "psnr_resized_original": 33.81
     },
     {
       "path": "assets/v12/drum-courtyard-layout2.webp",
-      "before": 124332,
-      "after": 102752,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 102752,
+      "after": 57606,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 39.58
+      "quality": 65,
+      "psnr_resized_original": 34.94
     },
     {
       "path": "assets/v12/meal-guoxian.webp",
-      "before": 179562,
-      "after": 136864,
-      "original_size": [
-        900,
-        461
-      ],
+      "before": 136864,
+      "after": 42598,
       "size": [
-        800,
-        410
+        480,
+        246
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 33.91
+      "quality": 68,
+      "psnr_resized_original": 30.15
     },
     {
       "path": "assets/v12/meal-jianbing.webp",
-      "before": 79520,
-      "after": 61058,
-      "original_size": [
-        900,
-        336
-      ],
+      "before": 61058,
+      "after": 20908,
       "size": [
-        800,
-        299
+        480,
+        179
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 36.15
+      "quality": 68,
+      "psnr_resized_original": 32.0
     },
     {
       "path": "assets/v12/meal-sanxian.webp",
-      "before": 130694,
-      "after": 99726,
-      "original_size": [
-        900,
-        462
-      ],
+      "before": 99726,
+      "after": 31752,
       "size": [
-        800,
-        411
+        480,
+        246
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 35.79
+      "quality": 68,
+      "psnr_resized_original": 32.03
     },
     {
       "path": "assets/v12/meal-yangyu.webp",
-      "before": 196082,
-      "after": 149952,
-      "original_size": [
-        900,
-        579
-      ],
+      "before": 149952,
+      "after": 45162,
       "size": [
-        800,
-        515
+        480,
+        309
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 35.05
+      "quality": 68,
+      "psnr_resized_original": 31.31
     },
     {
       "path": "assets/v12/table-bowls.webp",
-      "before": 175424,
-      "after": 146240,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 146240,
+      "after": 75924,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 38.66
+      "quality": 65,
+      "psnr_resized_original": 33.69
     },
     {
       "path": "assets/v14/empty-dish.webp",
-      "before": 104828,
-      "after": 55020,
-      "original_size": [
-        1000,
-        594
-      ],
+      "before": 55020,
+      "after": 23682,
       "size": [
-        720,
-        428
+        480,
+        285
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 35.12
+      "quality": 68,
+      "psnr_resized_original": 31.32
     },
     {
       "path": "assets/v14/empty-soup.webp",
-      "before": 120416,
-      "after": 61040,
-      "original_size": [
-        1000,
-        563
-      ],
+      "before": 61040,
+      "after": 25518,
       "size": [
-        720,
-        405
+        480,
+        270
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 34.19
+      "quality": 68,
+      "psnr_resized_original": 30.41
     },
     {
       "path": "assets/v14/served-guoxian.webp",
-      "before": 251408,
-      "after": 140818,
-      "original_size": [
-        1000,
-        635
-      ],
+      "before": 140818,
+      "after": 51862,
       "size": [
-        720,
-        457
+        480,
+        305
       ],
       "alpha": true,
-      "quality": 86,
-      "psnr_resized_reference_db": 32.72
+      "quality": 74,
+      "psnr_resized_original": 28.75
     },
     {
       "path": "assets/v14/served-jianbing.webp",
-      "before": 263950,
-      "after": 148416,
-      "original_size": [
-        1000,
-        649
-      ],
+      "before": 148416,
+      "after": 54198,
       "size": [
-        720,
-        467
+        480,
+        312
       ],
       "alpha": true,
-      "quality": 86,
-      "psnr_resized_reference_db": 32.64
+      "quality": 74,
+      "psnr_resized_original": 28.78
     },
     {
       "path": "assets/v14/served-sanxian.webp",
-      "before": 225802,
-      "after": 125534,
-      "original_size": [
-        1000,
-        681
-      ],
+      "before": 125534,
+      "after": 47620,
       "size": [
-        720,
-        490
+        480,
+        327
       ],
       "alpha": true,
-      "quality": 86,
-      "psnr_resized_reference_db": 32.75
+      "quality": 74,
+      "psnr_resized_original": 28.94
     },
     {
       "path": "assets/v14/served-yangyu.webp",
-      "before": 282842,
-      "after": 154510,
-      "original_size": [
-        1000,
-        655
-      ],
+      "before": 154510,
+      "after": 53814,
       "size": [
-        720,
-        472
+        480,
+        314
       ],
       "alpha": true,
-      "quality": 86,
-      "psnr_resized_reference_db": 32.82
+      "quality": 74,
+      "psnr_resized_original": 28.97
     },
     {
       "path": "assets/v14/shanbei-scroll.webp",
-      "before": 575842,
-      "after": 446202,
-      "original_size": [
-        2000,
-        1125
-      ],
+      "before": 446202,
+      "after": 308052,
       "size": [
-        2000,
-        1125
+        1800,
+        1013
       ],
       "alpha": false,
-      "quality": 79,
-      "psnr_resized_reference_db": 36.43
+      "quality": 69,
+      "psnr_resized_original": 33.2
     },
     {
       "path": "assets/v4/paper.webp",
-      "before": 34288,
-      "after": 932,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 932,
+      "after": 396,
       "size": [
-        288,
-        512
+        216,
+        384
       ],
       "alpha": false,
-      "quality": 74,
-      "psnr_resized_reference_db": 42.33
+      "quality": 64,
+      "psnr_resized_original": 42.63
     },
     {
       "path": "assets/v4/redpaper.webp",
-      "before": 148006,
-      "after": 13088,
-      "original_size": [
-        600,
-        1068
-      ],
+      "before": 13088,
+      "after": 4940,
       "size": [
-        288,
-        512
+        216,
+        384
       ],
       "alpha": false,
-      "quality": 74,
-      "psnr_resized_reference_db": 34.13
+      "quality": 64,
+      "psnr_resized_original": 33.97
     },
     {
       "path": "assets/v4/window-closeup.webp",
-      "before": 174832,
-      "after": 145798,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 145798,
+      "after": 76810,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 38.21
+      "quality": 65,
+      "psnr_resized_original": 33.31
     },
     {
       "path": "assets/v4/window-quiet.webp",
-      "before": 109246,
-      "after": 88260,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 88260,
+      "after": 44862,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 39.6
+      "quality": 65,
+      "psnr_resized_original": 34.85
     },
     {
       "path": "assets/v4/window.webp",
-      "before": 217716,
-      "after": 200450,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 200450,
+      "after": 112722,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 38.31
+      "quality": 65,
+      "psnr_resized_original": 31.96
     },
     {
       "path": "assets/v4/workshop-quiet.webp",
-      "before": 47852,
-      "after": 35776,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 35776,
+      "after": 18952,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 42.98
+      "quality": 65,
+      "psnr_resized_original": 38.93
     },
     {
       "path": "assets/v4/workshop.webp",
-      "before": 179276,
-      "after": 161422,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 161422,
+      "after": 89494,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 38.05
+      "quality": 65,
+      "psnr_resized_original": 32.2
     },
     {
       "path": "assets/v5/cave.webp",
-      "before": 117526,
-      "after": 107556,
-      "original_size": [
-        700,
-        383
-      ],
+      "before": 107556,
+      "after": 64686,
       "size": [
-        700,
-        383
+        600,
+        328
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 36.84
+      "quality": 68,
+      "psnr_resized_original": 31.33
     },
     {
       "path": "assets/v5/heritage-paper.webp",
-      "before": 83374,
-      "after": 6538,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 6538,
+      "after": 3380,
       "size": [
-        288,
-        512
+        216,
+        384
       ],
       "alpha": false,
-      "quality": 74,
-      "psnr_resized_reference_db": 36.56
+      "quality": 64,
+      "psnr_resized_original": 35.6
     },
     {
       "path": "assets/v5/pagoda.webp",
-      "before": 75746,
-      "after": 69292,
-      "original_size": [
-        367,
-        700
-      ],
+      "before": 69292,
+      "after": 41830,
       "size": [
-        367,
-        700
+        315,
+        600
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 38.11
+      "quality": 68,
+      "psnr_resized_original": 32.59
     },
     {
       "path": "assets/v5/tongwan.webp",
-      "before": 81038,
-      "after": 75306,
-      "original_size": [
-        700,
-        316
-      ],
+      "before": 75306,
+      "after": 48738,
       "size": [
-        700,
-        316
+        600,
+        271
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 38.13
+      "quality": 68,
+      "psnr_resized_original": 32.54
     },
     {
       "path": "assets/v6/cave-scene.webp",
-      "before": 114348,
-      "after": 93090,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 93090,
+      "after": 51864,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 39.5
+      "quality": 65,
+      "psnr_resized_original": 34.95
     },
     {
       "path": "assets/v6/frontier-scene.webp",
-      "before": 144268,
-      "after": 115720,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 115720,
+      "after": 64414,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 37.46
+      "quality": 65,
+      "psnr_resized_original": 33.33
     },
     {
       "path": "assets/v6/pagoda-scene.webp",
-      "before": 132870,
-      "after": 108138,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 108138,
+      "after": 60968,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 37.98
+      "quality": 65,
+      "psnr_resized_original": 33.66
     },
     {
       "path": "assets/v6/route-paper.webp",
-      "before": 113712,
-      "after": 13990,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 13990,
+      "after": 7718,
       "size": [
-        288,
-        512
+        216,
+        384
       ],
       "alpha": false,
-      "quality": 74,
-      "psnr_resized_reference_db": 32.8
+      "quality": 64,
+      "psnr_resized_original": 31.59
     },
     {
       "path": "assets/v6/tongwan-scene.webp",
-      "before": 115250,
-      "after": 93296,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 93296,
+      "after": 50304,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 39.39
+      "quality": 65,
+      "psnr_resized_original": 34.65
     },
     {
       "path": "assets/v7/cave-scene.webp",
-      "before": 148048,
-      "after": 109384,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 109384,
+      "after": 61832,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 38.27
+      "quality": 65,
+      "psnr_resized_original": 34.58
     },
     {
       "path": "assets/v7/cave.webp",
-      "before": 224228,
-      "after": 135824,
-      "original_size": [
-        1000,
-        551
-      ],
+      "before": 135824,
+      "after": 66952,
       "size": [
-        800,
-        441
+        600,
+        331
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 33.4
+      "quality": 68,
+      "psnr_resized_original": 30.27
     },
     {
       "path": "assets/v7/frontier-scene.webp",
-      "before": 118238,
-      "after": 84686,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 84686,
+      "after": 46586,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 38.91
+      "quality": 65,
+      "psnr_resized_original": 35.26
     },
     {
       "path": "assets/v7/pagoda-scene.webp",
-      "before": 136422,
-      "after": 100518,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 100518,
+      "after": 56588,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 37.89
+      "quality": 65,
+      "psnr_resized_original": 34.13
     },
     {
       "path": "assets/v7/tongwan-scene.webp",
-      "before": 125892,
-      "after": 89674,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 89674,
+      "after": 49964,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 39.01
+      "quality": 65,
+      "psnr_resized_original": 35.42
     },
     {
       "path": "assets/v7/wall.webp",
-      "before": 107048,
-      "after": 64670,
-      "original_size": [
-        1000,
-        477
-      ],
+      "before": 64670,
+      "after": 31702,
       "size": [
-        800,
-        382
+        600,
+        286
       ],
       "alpha": true,
-      "quality": 82,
-      "psnr_resized_reference_db": 36.88
+      "quality": 68,
+      "psnr_resized_original": 33.42
     },
     {
       "path": "assets/wall.webp",
       "before": 44182,
-      "after": 44182,
-      "original_size": [
-        600,
-        286
-      ],
+      "after": 38858,
       "size": [
         600,
         286
       ],
       "alpha": true,
-      "quality": "original",
-      "psnr_resized_reference_db": 99
+      "quality": 68,
+      "psnr_resized_original": 36.92
     },
     {
       "path": "assets/yangge.webp",
-      "before": 170590,
-      "after": 154920,
-      "original_size": [
-        750,
-        1334
-      ],
+      "before": 154920,
+      "after": 87182,
       "size": [
-        750,
-        1334
+        648,
+        1152
       ],
       "alpha": false,
-      "quality": 80,
-      "psnr_resized_reference_db": 39.35
+      "quality": 65,
+      "psnr_resized_original": 32.99
     }
-  ]
+  ],
+  "reduction_percent": 42.8
 }
