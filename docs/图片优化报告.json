@@ -1,0 +1,1100 @@
+{
+  "summary": {
+    "version": "20261017-web1",
+    "images": 67,
+    "images_before_bytes": 9777248,
+    "images_after_bytes": 7660064,
+    "original_all_images_before_bytes": 16111136,
+    "original_all_images_after_bytes": 12908434,
+    "image_reduction_percent": 21.7,
+    "fonts": [
+      {
+        "font": "home-title",
+        "bytes": 2100,
+        "glyphs": 4,
+        "source": "title.woff2"
+      },
+      {
+        "font": "home-song",
+        "bytes": 36132,
+        "glyphs": 136,
+        "source": "Google Fonts · Noto Serif SC official subset",
+        "url": "https://fonts.gstatic.com/l/font?kit=H4chBXePl9DZ0Xe7gG9cyOj7oqOEvTFLN_szR5Fszy2G86HFWAOscXf4s2_-49C8Wo9Snm93ci5Tq5xOPkc0Noh1-1-dTOfYirAxvqYzCwgJ1WK56CD1c9f5PkMAYMiakER6WzrZVcw1bw5ga6pOaW2-Hl99s604DWywF1N3I8B2uFMeX0MhGU8-5o2Ss_4gomXKDRM77nDXGmG2lgRIN9BHsH-Mo9tG_h3kCL1rTYD15rvF3cHH8FMYbsmdwmX8pQ1LCnvkfnQS8rdWxn9L9AADlJBdaa5jAsG4R-XPA68WJGViI2xoSEizq7Gz&skey=37fe335b8fd815cc&v=v36"
+      }
+    ]
+  },
+  "images": [
+    {
+      "path": "assets/cloud.webp",
+      "before": 101686,
+      "after": 97558,
+      "original_size": [
+        600,
+        359
+      ],
+      "size": [
+        600,
+        359
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 45.81
+    },
+    {
+      "path": "assets/cover-clean-v4.webp",
+      "before": 224716,
+      "after": 207028,
+      "original_size": [
+        750,
+        1333
+      ],
+      "size": [
+        750,
+        1333
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 37.5
+    },
+    {
+      "path": "assets/cover-clean.webp",
+      "before": 236270,
+      "after": 219836,
+      "original_size": [
+        750,
+        1333
+      ],
+      "size": [
+        750,
+        1333
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 37.43
+    },
+    {
+      "path": "assets/cover-reference-v4.webp",
+      "before": 231178,
+      "after": 214206,
+      "original_size": [
+        750,
+        1333
+      ],
+      "size": [
+        750,
+        1333
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 37.46
+    },
+    {
+      "path": "assets/cover-reference.webp",
+      "before": 246702,
+      "after": 227992,
+      "original_size": [
+        750,
+        1333
+      ],
+      "size": [
+        750,
+        1333
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 37.26
+    },
+    {
+      "path": "assets/cover-shanbei-v3.webp",
+      "before": 194620,
+      "after": 178818,
+      "original_size": [
+        750,
+        1333
+      ],
+      "size": [
+        750,
+        1333
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 37.97
+    },
+    {
+      "path": "assets/cover.webp",
+      "before": 260418,
+      "after": 245878,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 37.92
+    },
+    {
+      "path": "assets/dancer.webp",
+      "before": 63010,
+      "after": 62662,
+      "original_size": [
+        400,
+        600
+      ],
+      "size": [
+        400,
+        600
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 40.87
+    },
+    {
+      "path": "assets/fan.webp",
+      "before": 101162,
+      "after": 101162,
+      "original_size": [
+        600,
+        427
+      ],
+      "size": [
+        600,
+        427
+      ],
+      "alpha": true,
+      "quality": "original",
+      "psnr_resized_reference_db": 99
+    },
+    {
+      "path": "assets/flower.webp",
+      "before": 185814,
+      "after": 178578,
+      "original_size": [
+        600,
+        559
+      ],
+      "size": [
+        600,
+        559
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 44.02
+    },
+    {
+      "path": "assets/frontier.webp",
+      "before": 217016,
+      "after": 198400,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 38.58
+    },
+    {
+      "path": "assets/homes-v2.webp",
+      "before": 209320,
+      "after": 193930,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 38.65
+    },
+    {
+      "path": "assets/homes.webp",
+      "before": 144148,
+      "after": 133094,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 40.25
+    },
+    {
+      "path": "assets/musician.webp",
+      "before": 61710,
+      "after": 61710,
+      "original_size": [
+        283,
+        600
+      ],
+      "size": [
+        283,
+        600
+      ],
+      "alpha": true,
+      "quality": "original",
+      "psnr_resized_reference_db": 99
+    },
+    {
+      "path": "assets/paper.webp",
+      "before": 3526,
+      "after": 2190,
+      "original_size": [
+        512,
+        512
+      ],
+      "size": [
+        512,
+        512
+      ],
+      "alpha": false,
+      "quality": 74,
+      "psnr_resized_reference_db": 48.31
+    },
+    {
+      "path": "assets/prologue.webp",
+      "before": 125632,
+      "after": 110730,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 39.78
+    },
+    {
+      "path": "assets/red-paper.webp",
+      "before": 3882,
+      "after": 3612,
+      "original_size": [
+        256,
+        256
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "alpha": false,
+      "quality": 74,
+      "psnr_resized_reference_db": 43.58
+    },
+    {
+      "path": "assets/ribbon.webp",
+      "before": 36270,
+      "after": 35142,
+      "original_size": [
+        600,
+        385
+      ],
+      "size": [
+        600,
+        385
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 43.9
+    },
+    {
+      "path": "assets/scissors.webp",
+      "before": 68260,
+      "after": 65726,
+      "original_size": [
+        530,
+        518
+      ],
+      "size": [
+        530,
+        518
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 43.18
+    },
+    {
+      "path": "assets/scroll-landscape.webp",
+      "before": 157782,
+      "after": 153548,
+      "original_size": [
+        1000,
+        563
+      ],
+      "size": [
+        1000,
+        563
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 38.91
+    },
+    {
+      "path": "assets/sound.webp",
+      "before": 201850,
+      "after": 183460,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 38.59
+    },
+    {
+      "path": "assets/suona.webp",
+      "before": 37280,
+      "after": 37200,
+      "original_size": [
+        600,
+        383
+      ],
+      "size": [
+        600,
+        383
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 43.52
+    },
+    {
+      "path": "assets/tower.webp",
+      "before": 92190,
+      "after": 92190,
+      "original_size": [
+        578,
+        475
+      ],
+      "size": [
+        578,
+        475
+      ],
+      "alpha": true,
+      "quality": "original",
+      "psnr_resized_reference_db": 99
+    },
+    {
+      "path": "assets/v10/table-scene.webp",
+      "before": 183346,
+      "after": 158558,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 38.88
+    },
+    {
+      "path": "assets/v11/drum-courtyard.webp",
+      "before": 139860,
+      "after": 114846,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 39.26
+    },
+    {
+      "path": "assets/v11/drum-pad.webp",
+      "before": 73144,
+      "after": 59922,
+      "original_size": [
+        850,
+        452
+      ],
+      "size": [
+        800,
+        425
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 39.3
+    },
+    {
+      "path": "assets/v11/waist-drum.webp",
+      "before": 83420,
+      "after": 67692,
+      "original_size": [
+        850,
+        427
+      ],
+      "size": [
+        800,
+        402
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 36.71
+    },
+    {
+      "path": "assets/v11/waist-player-leap.webp",
+      "before": 121202,
+      "after": 93084,
+      "original_size": [
+        650,
+        950
+      ],
+      "size": [
+        547,
+        800
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 37.92
+    },
+    {
+      "path": "assets/v11/waist-player-ready.webp",
+      "before": 150994,
+      "after": 111596,
+      "original_size": [
+        800,
+        950
+      ],
+      "size": [
+        674,
+        800
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 37.6
+    },
+    {
+      "path": "assets/v11/waist-player-strike.webp",
+      "before": 146142,
+      "after": 109074,
+      "original_size": [
+        636,
+        950
+      ],
+      "size": [
+        536,
+        800
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 36.74
+    },
+    {
+      "path": "assets/v12/drum-courtyard-layout2.webp",
+      "before": 124332,
+      "after": 102752,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 39.58
+    },
+    {
+      "path": "assets/v12/meal-guoxian.webp",
+      "before": 179562,
+      "after": 136864,
+      "original_size": [
+        900,
+        461
+      ],
+      "size": [
+        800,
+        410
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 33.91
+    },
+    {
+      "path": "assets/v12/meal-jianbing.webp",
+      "before": 79520,
+      "after": 61058,
+      "original_size": [
+        900,
+        336
+      ],
+      "size": [
+        800,
+        299
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 36.15
+    },
+    {
+      "path": "assets/v12/meal-sanxian.webp",
+      "before": 130694,
+      "after": 99726,
+      "original_size": [
+        900,
+        462
+      ],
+      "size": [
+        800,
+        411
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 35.79
+    },
+    {
+      "path": "assets/v12/meal-yangyu.webp",
+      "before": 196082,
+      "after": 149952,
+      "original_size": [
+        900,
+        579
+      ],
+      "size": [
+        800,
+        515
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 35.05
+    },
+    {
+      "path": "assets/v12/table-bowls.webp",
+      "before": 175424,
+      "after": 146240,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 38.66
+    },
+    {
+      "path": "assets/v14/empty-dish.webp",
+      "before": 104828,
+      "after": 55020,
+      "original_size": [
+        1000,
+        594
+      ],
+      "size": [
+        720,
+        428
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 35.12
+    },
+    {
+      "path": "assets/v14/empty-soup.webp",
+      "before": 120416,
+      "after": 61040,
+      "original_size": [
+        1000,
+        563
+      ],
+      "size": [
+        720,
+        405
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 34.19
+    },
+    {
+      "path": "assets/v14/served-guoxian.webp",
+      "before": 251408,
+      "after": 140818,
+      "original_size": [
+        1000,
+        635
+      ],
+      "size": [
+        720,
+        457
+      ],
+      "alpha": true,
+      "quality": 86,
+      "psnr_resized_reference_db": 32.72
+    },
+    {
+      "path": "assets/v14/served-jianbing.webp",
+      "before": 263950,
+      "after": 148416,
+      "original_size": [
+        1000,
+        649
+      ],
+      "size": [
+        720,
+        467
+      ],
+      "alpha": true,
+      "quality": 86,
+      "psnr_resized_reference_db": 32.64
+    },
+    {
+      "path": "assets/v14/served-sanxian.webp",
+      "before": 225802,
+      "after": 125534,
+      "original_size": [
+        1000,
+        681
+      ],
+      "size": [
+        720,
+        490
+      ],
+      "alpha": true,
+      "quality": 86,
+      "psnr_resized_reference_db": 32.75
+    },
+    {
+      "path": "assets/v14/served-yangyu.webp",
+      "before": 282842,
+      "after": 154510,
+      "original_size": [
+        1000,
+        655
+      ],
+      "size": [
+        720,
+        472
+      ],
+      "alpha": true,
+      "quality": 86,
+      "psnr_resized_reference_db": 32.82
+    },
+    {
+      "path": "assets/v14/shanbei-scroll.webp",
+      "before": 575842,
+      "after": 446202,
+      "original_size": [
+        2000,
+        1125
+      ],
+      "size": [
+        2000,
+        1125
+      ],
+      "alpha": false,
+      "quality": 79,
+      "psnr_resized_reference_db": 36.43
+    },
+    {
+      "path": "assets/v4/paper.webp",
+      "before": 34288,
+      "after": 932,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        288,
+        512
+      ],
+      "alpha": false,
+      "quality": 74,
+      "psnr_resized_reference_db": 42.33
+    },
+    {
+      "path": "assets/v4/redpaper.webp",
+      "before": 148006,
+      "after": 13088,
+      "original_size": [
+        600,
+        1068
+      ],
+      "size": [
+        288,
+        512
+      ],
+      "alpha": false,
+      "quality": 74,
+      "psnr_resized_reference_db": 34.13
+    },
+    {
+      "path": "assets/v4/window-closeup.webp",
+      "before": 174832,
+      "after": 145798,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 38.21
+    },
+    {
+      "path": "assets/v4/window-quiet.webp",
+      "before": 109246,
+      "after": 88260,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 39.6
+    },
+    {
+      "path": "assets/v4/window.webp",
+      "before": 217716,
+      "after": 200450,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 38.31
+    },
+    {
+      "path": "assets/v4/workshop-quiet.webp",
+      "before": 47852,
+      "after": 35776,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 42.98
+    },
+    {
+      "path": "assets/v4/workshop.webp",
+      "before": 179276,
+      "after": 161422,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 38.05
+    },
+    {
+      "path": "assets/v5/cave.webp",
+      "before": 117526,
+      "after": 107556,
+      "original_size": [
+        700,
+        383
+      ],
+      "size": [
+        700,
+        383
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 36.84
+    },
+    {
+      "path": "assets/v5/heritage-paper.webp",
+      "before": 83374,
+      "after": 6538,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        288,
+        512
+      ],
+      "alpha": false,
+      "quality": 74,
+      "psnr_resized_reference_db": 36.56
+    },
+    {
+      "path": "assets/v5/pagoda.webp",
+      "before": 75746,
+      "after": 69292,
+      "original_size": [
+        367,
+        700
+      ],
+      "size": [
+        367,
+        700
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 38.11
+    },
+    {
+      "path": "assets/v5/tongwan.webp",
+      "before": 81038,
+      "after": 75306,
+      "original_size": [
+        700,
+        316
+      ],
+      "size": [
+        700,
+        316
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 38.13
+    },
+    {
+      "path": "assets/v6/cave-scene.webp",
+      "before": 114348,
+      "after": 93090,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 39.5
+    },
+    {
+      "path": "assets/v6/frontier-scene.webp",
+      "before": 144268,
+      "after": 115720,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 37.46
+    },
+    {
+      "path": "assets/v6/pagoda-scene.webp",
+      "before": 132870,
+      "after": 108138,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 37.98
+    },
+    {
+      "path": "assets/v6/route-paper.webp",
+      "before": 113712,
+      "after": 13990,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        288,
+        512
+      ],
+      "alpha": false,
+      "quality": 74,
+      "psnr_resized_reference_db": 32.8
+    },
+    {
+      "path": "assets/v6/tongwan-scene.webp",
+      "before": 115250,
+      "after": 93296,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 39.39
+    },
+    {
+      "path": "assets/v7/cave-scene.webp",
+      "before": 148048,
+      "after": 109384,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 38.27
+    },
+    {
+      "path": "assets/v7/cave.webp",
+      "before": 224228,
+      "after": 135824,
+      "original_size": [
+        1000,
+        551
+      ],
+      "size": [
+        800,
+        441
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 33.4
+    },
+    {
+      "path": "assets/v7/frontier-scene.webp",
+      "before": 118238,
+      "after": 84686,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 38.91
+    },
+    {
+      "path": "assets/v7/pagoda-scene.webp",
+      "before": 136422,
+      "after": 100518,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 37.89
+    },
+    {
+      "path": "assets/v7/tongwan-scene.webp",
+      "before": 125892,
+      "after": 89674,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 39.01
+    },
+    {
+      "path": "assets/v7/wall.webp",
+      "before": 107048,
+      "after": 64670,
+      "original_size": [
+        1000,
+        477
+      ],
+      "size": [
+        800,
+        382
+      ],
+      "alpha": true,
+      "quality": 82,
+      "psnr_resized_reference_db": 36.88
+    },
+    {
+      "path": "assets/wall.webp",
+      "before": 44182,
+      "after": 44182,
+      "original_size": [
+        600,
+        286
+      ],
+      "size": [
+        600,
+        286
+      ],
+      "alpha": true,
+      "quality": "original",
+      "psnr_resized_reference_db": 99
+    },
+    {
+      "path": "assets/yangge.webp",
+      "before": 170590,
+      "after": 154920,
+      "original_size": [
+        750,
+        1334
+      ],
+      "size": [
+        750,
+        1334
+      ],
+      "alpha": false,
+      "quality": 80,
+      "psnr_resized_reference_db": 39.35
+    }
+  ]
+}

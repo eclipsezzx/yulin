@@ -2,11 +2,11 @@
 // The accepted pointer trace is the cut edge. The guide only judges proximity and forward progress.
 YL.interact.cut=async function(step,scope){
  this.ready(step);
- const A=YL.art,svg=YL.game.svg,key=step.object,finalBox=A.boxes[key];
- const box=key==='wall'?{x:30,y:378,w:315,h:100}:{...(step.cutBox||finalBox)};
- const sheet={x:22,y:338,w:331,h:190},task=A.svg('g',{'data-task':'cut'},svg);
+ const A=YL.art,svg=YL.game.svg,key=step.object,finalBox=step.resultBox||A.boxes[key];
+ const box={...(step.cutBox||(key==='wall'?{x:30,y:378,w:315,h:100}:finalBox))};
+ const sheet=step.sheetBox||{x:22,y:338,w:331,h:190},task=A.svg('g',{'data-task':'cut'},svg),duration=ms=>step.reducedMotion?1:ms;
  YL.$(`[data-object="${key}"]`,svg)?.remove();
- const sheetD=`M22 340L75 338L133 340L196 338L259 341L327 339L353 342L351 390L353 439L350 486L352 526L293 528L231 526L166 529L101 526L23 528L25 477L22 425L24 378Z`;
+ const sheetD=step.sheetBox?`M${sheet.x+1} ${sheet.y+2}L${sheet.x+sheet.w*.32} ${sheet.y}L${sheet.x+sheet.w*.67} ${sheet.y+2}L${sheet.x+sheet.w} ${sheet.y+1}L${sheet.x+sheet.w-1} ${sheet.y+sheet.h*.5}L${sheet.x+sheet.w} ${sheet.y+sheet.h-1}L${sheet.x+sheet.w*.65} ${sheet.y+sheet.h+1}L${sheet.x+sheet.w*.33} ${sheet.y+sheet.h-1}L${sheet.x} ${sheet.y+sheet.h}Z`:`M22 340L75 338L133 340L196 338L259 341L327 339L353 342L351 390L353 439L350 486L352 526L293 528L231 526L166 529L101 526L23 528L25 477L22 425L24 378Z`;
  const paper=A.svg('path',{class:'paper-blank',d:sheetD,fill:'url(#redPaper)',filter:'url(#paperLift)'},task);
  const outline=A.path(key,box),guide=A.svg('path',{class:'guide cut-guide',d:outline},task);
  const total=guide.getTotalLength(),N=300;
@@ -43,30 +43,30 @@ YL.interact.cut=async function(step,scope){
    YL.store.data.handCuts=YL.store.data.handCuts||{};YL.store.data.handCuts[key]={points:cut.points,assisted};
    const d=pathFor(trace,true),offcuts=A.svg('g',{'pointer-events':'none'},task);
    const defs=A.svg('defs',{},offcuts),sheets=[];
-   const quadrants=[{x:0,y:330,w:188,h:104,dx:-30,rot:-8},{x:188,y:330,w:188,h:104,dx:35,rot:9},{x:0,y:434,w:188,h:115,dx:-25,rot:-6},{x:188,y:434,w:188,h:115,dx:28,rot:12}];
+   const quadrants=step.sheetBox?[{x:sheet.x-2,y:sheet.y-2,w:sheet.w/2+2,h:sheet.h/2+2,dx:-30,rot:-8},{x:sheet.x+sheet.w/2,y:sheet.y-2,w:sheet.w/2+2,h:sheet.h/2+2,dx:35,rot:9},{x:sheet.x-2,y:sheet.y+sheet.h/2,w:sheet.w/2+2,h:sheet.h/2+2,dx:-25,rot:-6},{x:sheet.x+sheet.w/2,y:sheet.y+sheet.h/2,w:sheet.w/2+2,h:sheet.h/2+2,dx:28,rot:12}]:[{x:0,y:330,w:188,h:104,dx:-30,rot:-8},{x:188,y:330,w:188,h:104,dx:35,rot:9},{x:0,y:434,w:188,h:115,dx:-25,rot:-6},{x:188,y:434,w:188,h:115,dx:28,rot:12}];
    quadrants.forEach((q,i)=>{const id='offcut-'+key+'-'+i,c=A.svg('clipPath',{id},defs);A.svg('rect',{x:q.x,y:q.y,width:q.w,height:q.h},c);const part=A.svg('g',{'clip-path':`url(#${id})`},offcuts);A.svg('path',{d:sheetD+' '+d,'fill-rule':'evenodd',fill:'url(#redPaper)',filter:'url(#paperLift)'},part);sheets.push({part,q});});
    const result=A.result(task,key,box,cut);result.setAttribute('opacity',0);
    const retained=A.svg('path',{class:'retained-paper',d,fill:'url(#redPaper)',filter:'url(#paperLift)'},task);
    YL.audio.page();YL.store.data.cuts++;YL.store.save();
    try{
-    await scope.animate(800,k=>{const ease=k*k;for(const{part,q}of sheets){part.setAttribute('transform',`translate(${q.dx*ease},${90*ease}) rotate(${q.rot*ease},187,435)`);part.setAttribute('opacity',Math.max(0,1-k*1.3));}const reveal=Math.max(0,(k-.27)/.73);result.setAttribute('opacity',reveal);retained.setAttribute('opacity',1-reveal);retained.setAttribute('transform',`translate(187,435) scale(${1+Math.sin(k*Math.PI)*.025}) translate(-187,-435)`);});
+    await scope.animate(duration(800),k=>{const ease=k*k;for(const{part,q}of sheets){part.setAttribute('transform',`translate(${q.dx*ease},${90*ease}) rotate(${q.rot*ease},187,435)`);part.setAttribute('opacity',Math.max(0,1-k*1.3));}const reveal=Math.max(0,(k-.27)/.73);result.setAttribute('opacity',reveal);retained.setAttribute('opacity',1-reveal);retained.setAttribute('transform',`translate(187,435) scale(${1+Math.sin(k*Math.PI)*.025}) translate(-187,-435)`);});
     offcuts.remove();retained.remove();YL.audio.win();A.particles(svg,box.x+box.w*.7,box.y+box.h*.7,scope);
-    if(key==='wall'||step.cutBox){await scope.animate(600,k=>{const e=1-(1-k)**3;result.setAttribute('transform',`translate(${box.x+(finalBox.x-box.x)*e},${box.y+(finalBox.y-box.y)*e}) scale(${box.w+(finalBox.w-box.w)*e},${box.h+(finalBox.h-box.h)*e})`);});}
-    await scope.wait(180);task.setAttribute('data-object',key);task.removeAttribute('data-task');track.hidden=true;YL.game.visual[key]=true;done();
+    if(key==='wall'||step.cutBox){await scope.animate(duration(600),k=>{const e=1-(1-k)**3;result.setAttribute('transform',`translate(${box.x+(finalBox.x-box.x)*e},${box.y+(finalBox.y-box.y)*e}) scale(${box.w+(finalBox.w-box.w)*e},${box.h+(finalBox.h-box.h)*e})`);});}
+    await scope.wait(duration(180));task.setAttribute('data-object',key);task.removeAttribute('data-task');track.hidden=true;YL.game.visual[key]=true;done();
    }catch{}
   };
   const accept=p=>{
    let best=idx,dist=Infinity;for(let j=Math.max(0,idx-2);j<=Math.min(N,idx+22);j++){const d=Math.hypot(p.x-refs[j].x,p.y-refs[j].y);if(d<dist){dist=d;best=j;}}
    // Contour corridor rejects shortcuts and large deviations. It never snaps the actual edge onto the guide.
-   if(dist>16||best<idx-2)return false;
+   if(dist>(step.easy?23:16)||best<idx-2)return false;
    idx=Math.max(idx,best);const moved=Math.hypot(p.x-tip.x,p.y-tip.y);
    if(moved>.75){trace.push({x:p.x,y:p.y});tip={x:p.x,y:p.y};}
    return true;
   };
   scope.event(svg,'pointerdown',e=>{
    if(finished||failed||YL.game.paused||dragging)return;const p=this.point(svg,e),distance=Math.hypot(p.x-tip.x,p.y-tip.y);
-   if(distance>(trace.length?25:23)){return;}
-   if(!trace.length){const d=Math.hypot(p.x-start.x,p.y-start.y);if(d>18){return;}tip=p;trace.push({...p});}
+   if(distance>(step.easy?31:(trace.length?25:23))){return;}
+   if(!trace.length){const d=Math.hypot(p.x-start.x,p.y-start.y);if(d>(step.easy?27:18)){return;}tip=p;trace.push({...p});}
    dragging=true;clearDrift();lastRaw={...p};activePointer=e.pointerId;svg.setPointerCapture?.(e.pointerId);scissors.style.opacity='1';YL.audio.cut();e.preventDefault();
   });
   scope.event(svg,'pointermove',e=>{
@@ -75,7 +75,7 @@ YL.interact.cut=async function(step,scope){
    scissors.setAttribute('transform',`translate(${tip.x},${tip.y})`);scissors.style.opacity=okay?'1':'.45';paint();
    // Minor slips are recoverable; only substantial out-of-corridor travel fails the attempt.
    const rawTravel=lastRaw?Math.hypot(p.x-lastRaw.x,p.y-lastRaw.y):0;lastRaw={...p};
-   if(okay){clearDrift();}else{let corridor=Infinity;for(let j=Math.max(0,idx-2);j<=Math.min(N,idx+22);j++)corridor=Math.min(corridor,Math.hypot(p.x-refs[j].x,p.y-refs[j].y));if(corridor>29){if(badSince===null)badSince=scope.time;badTravel+=rawTravel;if(badTravel>=72){fail();e.preventDefault();return;}}else clearDrift();}
+   if(okay){clearDrift();}else{let corridor=Infinity;for(let j=Math.max(0,idx-2);j<=Math.min(N,idx+22);j++)corridor=Math.min(corridor,Math.hypot(p.x-refs[j].x,p.y-refs[j].y));if(corridor>29&&!step.easy){if(badSince===null)badSince=scope.time;badTravel+=rawTravel;if(badTravel>=72){fail();e.preventDefault();return;}}else clearDrift();}
    if(okay&&scope.time-lastNoise>90){lastNoise=scope.time;YL.audio.cut();}
    if(idx>=N-2&&Math.hypot(tip.x-trace[0].x,tip.y-trace[0].y)<22)finish(false);e.preventDefault();
   });

@@ -1,0 +1,31 @@
+'use strict';
+YL.editorial={
+ version:'20261017-layout2',
+ async intro(lines,scope){
+  const screen=YL.$('#game-screen'),narr=YL.$('#narration'),next=YL.$('#narr-next');screen.classList.add('chapter-intro');narr.setAttribute('role','button');narr.setAttribute('tabindex','0');narr.setAttribute('aria-label','轻触旁白继续');YL.$('#stage-next').hidden=true;YL.game.setHint('');YL.game.showTags([]);
+  try{for(const [i,line]of lines.entries()){next.hidden=true;screen.dataset.introLine=String(i+1);await YL.prologue.text(line,scope);next.className='next-cue';next.textContent='轻触继续 ›';next.hidden=false;YL.narrationFit?.fit();await scope.promise(resolve=>{let done=false;const finish=()=>{if(done||YL.game.paused)return;done=true;YL.game.skipper=null;narr.onclick=null;next.onclick=null;resolve();};narr.onclick=finish;next.onclick=e=>{e.stopPropagation();finish();};scope.event(narr,'keydown',e=>{if(['Enter',' '].includes(e.key)){e.preventDefault();finish();}});YL.game.skipper=finish;scope.cleanup(()=>{narr.onclick=null;next.onclick=null;});});}}
+  finally{next.hidden=true;narr.onclick=null;next.onclick=null;narr.removeAttribute('role');narr.removeAttribute('tabindex');screen.classList.remove('chapter-intro');delete screen.dataset.introLine;YL.narrationFit?.schedule();}
+ },
+ hotspot(parent,{x,y,label,key,attrs={},onOpen},scope){
+  const A=YL.art,g=A.svg('g',{class:'hotspot editorial-hotspot',role:'button',tabindex:0,'aria-label':'探索'+label,transform:`translate(${x},${y})`,...attrs},parent);A.svg('circle',{r:14,fill:'none',stroke:'#D83A25','stroke-width':1.3},g);A.svg('circle',{r:4,fill:'#D83A25',stroke:'#F4EBDD','stroke-width':1.5},g);A.svg('circle',{r:22,fill:'transparent'},g);const t=A.svg('text',{x:0,y:-22,'text-anchor':'middle','font-size':11,'pointer-events':'none'},g);t.textContent=label;const open=async e=>{e.stopPropagation();if(YL.game.paused)return;YL.audio.tap();await(onOpen?onOpen():YL.ui.card(key));if(!scope.signal.aborted)g.setAttribute('opacity','.65');};scope.event(g,'click',open);scope.event(g,'keydown',e=>{if(['Enter',' '].includes(e.key)){e.preventDefault();open(e);}});return g;
+ },
+ foodCard(d){const key='meal-'+d.key;YL.cards[key]={title:d.name,body:d.pages[0],more:'<h3>食材手艺</h3><p>'+d.pages[1]+'</p><h3>入口滋味</h3><p>'+d.pages[2]+'</p>',sources:d.sources};return YL.ui.card(key);}
+};
+// A shared paper card keeps the original chapter-four reading and expand interaction.
+YL.ui.card=function(key){const c=YL.cards[key];if(!c)return Promise.resolve();const sourceOnly=typeof c.more==='string'&&c.more.trim().startsWith('<p class="source-links">'),extra=sourceOnly?'':c.more,sources=c.sources?YL.heritage.links(c.sources):sourceOnly?c.more:'';return this.modal({kicker:'文化知识'+(extra?' · 可展开':''),title:c.title,body:`<p>${c.body}</p>${extra?`<div class="modal-extra" hidden>${extra}</div>`:''}${sources}`,className:'knowledge'+(key.startsWith('meal-')?' meal-knowledge':''),buttons:[{label:extra?'展开更多':'知道了',keep:true,action:n=>{const more=YL.$('.modal-extra');if(more?.hidden){more.hidden=false;n.textContent='知道了';}else this.closeModal();}}]}).then(()=>{});};
+// Labelled ring-and-dot hotspots, rather than a second kind of round knowledge badge.
+YL.details.attach=function(key,scope){const g=YL.art.svg('g',{'data-site-details':key},YL.game.svg);for(const [label,x,y,lx,ly,card]of this.sites[key]||[])YL.editorial.hotspot(g,{x,y,label,key:card,attrs:{'data-detail':card,class:'hotspot editorial-hotspot site-detail'}},scope);return g;};
+YL.food.version='20261017-bowls2';YL.table.version=YL.food.version;
+YL.food.box=function(key){const a=YL.tableArt[key],w=Math.min(174,96*a.width/a.height),h=w*a.height/a.width;return{x:(375-w)/2,y:350+(106-h)/2,w,h};};
+YL.food.target=function(key,index){const a=YL.tableArt[key],center=[{x:109,y:375},{x:267,y:378},{x:106,y:438},{x:272,y:455}][index],w=Math.min(index===1?113:109,55*a.width/a.height),h=w*a.height/a.width;return{x:center.x-w/2,y:center.y+7-h,w,h};};
+YL.food.background=function(){const img=YL.$('#fold-scene');img.className='scene-art scene-dining-table';img.src=`assets/v12/table-bowls.webp?v=${this.version}`;img.alt='窑洞人家的木餐桌上，预先放好的四只空碗盘；餐具为固定背景';};
+YL.food.asset=function(key){return `assets/v12/${YL.tableArt[key].asset}.webp?v=${this.version}`;};
+YL.food.open=function(d){if(YL.game.paused||!['table','read','final'].includes(this.mode))return;return YL.editorial.foodCard(d);};
+YL.waist.version=YL.editorial.version;YL.waist.hero={x:105,y:281,w:165,h:196};YL.waist.sides=[{x:2,y:331,w:101,h:120},{x:272,y:331,w:101,h:120}];
+YL.waist.scene=function(equipped=true){const g=YL.art.svg('g',{'data-folk':'waist-scene'},YL.game.svg);for(const b of this.sides)this.actor(g,'waist-player-ready',b,true);this.actor(g,'waist-player-ready',this.hero,equipped);return g;};
+YL.waist.card=function(index){const d=this.cards[index],key='costume-'+index;YL.cards[key]={title:d.title,body:d.body,sources:d.sources};return YL.ui.card(key);};
+YL.waist.hotspots=function(scope){const A=YL.art,b=this.fit('waist-player-ready',this.hero),g=A.svg('g',{'data-folk':'costume-hotspots'},YL.game.svg);for(const [i,x,y]of [[0,.49,.19],[1,.68,.54],[2,.20,.09]])YL.editorial.hotspot(g,{x:b.x+b.w*x,y:b.y+b.h*y,label:this.cards[i].title,attrs:{'data-costume-hotspot':i},onOpen:()=>this.card(i)},scope);};
+const editorialOverview=YL.route.overview.bind(YL.route);YL.route.overview=async function(scope){this.mode('story');this.background('frontier-scene');YL.$('#heritage-place').textContent='';await YL.editorial.intro(['风越过黄土山梁，长城、高台和古塔，依次露出轮廓。','从墙垣走到窑院，看看陕北的人怎样顺着山势，留下守望与生活的痕迹。'],scope);return editorialOverview(scope);};
+YL.v3.help=function(){YL.ui.modal({kicker:'纸上陕北',title:'从剪口走进地方生活',body:'<p>各章先读两句引入语，轻触旁白继续。旁白框随实际文字收拢。沿引导剪纸，松手可续剪；剪好的食物拖入桌上固定碗盘，腰鼓拖到人物腰间。</p><p>文化知识和带名称的红色热点均可选阅读，知识卡可展开更多。第三章跟随十五秒真实安塞腰鼓演出节选点按左右鼓面，也可直接观看。进度保存在本机，本次制作到第三章。</p>',buttons:[{label:'继续体验'}]});};
+
+const editorialBackground=YL.waist.background.bind(YL.waist);YL.waist.background=function(){editorialBackground();YL.$('#fold-scene').src='assets/v12/drum-courtyard-layout2.webp?v='+YL.editorial.version;YL.$('#heritage-place').textContent='';YL.$('#heritage-place').setAttribute('aria-hidden','true');};
