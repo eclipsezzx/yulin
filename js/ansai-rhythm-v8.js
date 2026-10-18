@@ -1,7 +1,7 @@
 'use strict';
 YL.ansaiRhythm={
  buffer:null,live:null,
- async load(scope){if(this.buffer)return this.buffer;YL.audio.init();const response=await fetch('assets/v11/ansai-15s.m4a?v='+YL.waist.version,{signal:scope.signal});if(!response.ok)throw Error('Music HTTP '+response.status);const bytes=await response.arrayBuffer(),buffer=await YL.audio.ctx.decodeAudioData(bytes);if(scope.signal.aborted)throw YL.abortError();this.buffer=buffer;return buffer;},
+ async load(scope){if(this.buffer)return this.buffer;YL.audio.init();const response=await fetch('assets/v11/ansai-15s.m4a?v=20261018-web3',{signal:scope.signal});if(!response.ok)throw Error('Music HTTP '+response.status);const bytes=await response.arrayBuffer(),buffer=await YL.audio.ctx.decodeAudioData(bytes);if(scope.signal.aborted)throw YL.abortError();this.buffer=buffer;return buffer;},
  async play(scope){
   const A=YL.art,svg=YL.game.svg,score=YL.ansaiScore,g=A.svg('g',{'data-folk':'rhythm','data-rhythm-root':'true'},svg);YL.$('#game-screen').classList.add('ansai-rhythm');YL.game.showTags([],scope);const meta=document.createElement('button');meta.className='rhythm-meta';meta.innerHTML='<span>安塞腰鼓 · 刘国进等表演实录节选</span>';meta.setAttribute('aria-label','演目与录音来源');YL.$('#game-screen').append(meta);scope.event(meta,'click',()=>{if(!YL.game.paused)YL.ui.card('f-recording');});YL.$('#fold-footer').textContent='纸上陕北 · 第三章 · 跟着实录打鼓';
   const behind=A.svg('g',{'pointer-events':'none'},g);for(const b of YL.waist.sides)YL.waist.actor(behind,'waist-player-ready',b,true);

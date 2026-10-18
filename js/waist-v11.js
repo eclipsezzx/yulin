@@ -1,7 +1,7 @@
 'use strict';
 YL.waist={
  version:'20261017-drum15',cut:null,hero:{x:88,y:278,w:199,h:236},
- asset(key){return `assets/v11/${key}.webp?v=${this.version}`;},
+ asset(key){return `assets/v11/${key}.webp?v=20261018-web3`;},
  background(){const img=YL.$('#fold-scene');img.className='scene-art scene-drum-courtyard';img.src=this.asset('drum-courtyard');img.alt='石砌窑院、两侧围观的人群与院边树枝组成的安塞纸艺场景';YL.$('#game-screen').classList.add('waist-screen');},
  fit(key,box){const a=YL.waistArt[key],w=Math.min(box.w,box.h*a.width/a.height),h=w*a.height/a.width;return{x:box.x+(box.w-w)/2,y:box.y+box.h-h,w,h};},
  drumBox(pose,box){const b=this.fit(pose,box),centers={'waist-player-ready':[.55,.51],'waist-player-strike':[.49,.49],'waist-player-leap':[.48,.49]},c=centers[pose],w=b.h*.29,h=w*YL.waistArt['waist-drum'].height/YL.waistArt['waist-drum'].width;return{x:b.x+b.w*c[0]-w/2,y:b.y+b.h*c[1]-h/2,w,h};},

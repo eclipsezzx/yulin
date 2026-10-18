@@ -44,11 +44,11 @@ Object.assign(YL.cards,{
  'd-tree':{title:'崖上的树 · 林草与水土',body:'窑顶的垴畔和院旁常可见树木，土崖、草木与院落共同组成陕北民居的环境。黄土高原的植被恢复要因地制宜，搭配乔木、灌木与草本；保护水土，也需要照顾当地的水分条件。',more:detailLinks([caveSource,['中科院水保所 · 黄土高原生态水文','https://iswc.cas.cn/xwdt/zhxw_171951/202505/t20250509_7649407.html']])}
 });
 // Revised siblings keep the original art files available for comparison.
-const detailImage=YL.art.image.bind(YL.art);YL.art.image=function(parent,key,box,attrs={}){if(['wall','cave'].includes(key))return this.svg('image',{href:`assets/v7/${key}.webp?v=${YL.route.version}`,x:box.x,y:box.y,width:box.w,height:box.h,preserveAspectRatio:'none',...attrs},parent);return detailImage(parent,key,box,attrs);};
+const detailImage=YL.art.image.bind(YL.art);YL.art.image=function(parent,key,box,attrs={}){if(['wall','cave'].includes(key))return this.svg('image',{href:`assets/v7/${key}.webp?v=20261018-web3`,x:box.x,y:box.y,width:box.w,height:box.h,preserveAspectRatio:'none',...attrs},parent);return detailImage(parent,key,box,attrs);};
 YL.heritage.places[2].after='偏白的残墙仍立在沙地边。城墙的断口与突出的墩台，留下了统万城曾经的尺度。';
 YL.heritage.places[3].hint='沿层层檐线起落剪，留出渐收的塔身';
 // Keep the directory title on the page paper; remove the extra current-chapter line.
 const detailMap=YL.game.map.bind(YL.game);YL.game.map=async function(){await detailMap();const p=YL.$('.map-heading>p:last-child');if(p&&!p.classList.contains('chapter-label'))p.remove();const title=YL.$('[data-chapter="1"] strong');if(title)title.textContent='山河往事';};
 YL.heritage.chapter.name='山河往事';
-YL.route.background=function(key){const image=YL.$('#fold-scene');image.classList.remove('window-arrive');image.className='scene-art scene-'+key;image.src=`assets/${key==='route-paper'?'v6':'v7'}/${key}.webp?v=${this.version}`;image.alt=key==='route-paper'?'北向上的陕北文化旅程示意':'依据当地实景环境重绘的陕北纸艺插画';};
+YL.route.background=function(key){const image=YL.$('#fold-scene');image.classList.remove('window-arrive');image.className='scene-art scene-'+key;image.src=`assets/${key==='route-paper'?'v6':'v7'}/${key}.webp?v=20261018-web3`;image.alt=key==='route-paper'?'北向上的陕北文化旅程示意':'依据当地实景环境重绘的陕北纸艺插画';};
 YL.route.materials.pagoda.target.y=312;

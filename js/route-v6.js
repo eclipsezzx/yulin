@@ -12,7 +12,7 @@ YL.route={
  project(p){return{x:187.5+(p.lon-109.45)*Math.cos(37.5*Math.PI/180)*116,y:320+(38.33629-p.lat)*116};},
  materials:{wall:{scene:'frontier-scene',station:0,target:{x:19,y:360,w:295,h:91},home:{x:26,y:463,w:240,h:74}},tower:{scene:'frontier-scene',station:0,target:{x:241,y:315,w:110,h:91},home:{x:34,y:443,w:108,h:89}},tongwan:{scene:'tongwan-scene',station:1,target:{x:43,y:329,w:288,h:130},home:{x:33,y:455,w:180,h:81}},pagoda:{scene:'pagoda-scene',station:2,target:{x:146,y:284,w:82,h:156},home:{x:37,y:419,w:59,h:113}},cave:{scene:'cave-scene',station:3,target:{x:59,y:317,w:263,h:144},home:{x:29,y:451,w:157,h:86}}},
  mode(mode){YL.$('#game-screen').dataset.mode=mode;},
- background(key){const image=YL.$('#fold-scene');image.classList.remove('window-arrive');image.className='scene-art scene-'+key;image.src='assets/v6/'+key+'.webp?v='+this.version;image.alt=key==='route-paper'?'陕北地域路线的纸艺底图':'为建筑剪纸留出位置的陕北纸艺风景';},
+ background(key){const image=YL.$('#fold-scene');image.classList.remove('window-arrive');image.className='scene-art scene-'+key;image.src='assets/v6/'+key+'.webp?v=20261018-web3';image.alt=key==='route-paper'?'陕北地域路线的纸艺底图':'为建筑剪纸留出位置的陕北纸艺风景';},
  async clear(){YL.game.svg.querySelectorAll('[data-object],[data-task],[data-heritage],[data-route],[data-landmark-set],[data-site-details]').forEach(n=>n.remove());YL.game.showTags([]);YL.game.setHint('');YL.$('#progress-track').hidden=true;YL.$('#stage-next').hidden=true;YL.game.skipper=null;},
  drawMap(current=0){
   const A=YL.art,g=A.svg('g',{'data-route':'map','aria-label':'北向上的陕北四站位置示意'},YL.game.svg),pts=this.stops.map(p=>this.project(p));

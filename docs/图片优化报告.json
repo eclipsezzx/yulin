@@ -1,814 +1,1213 @@
 {
-  "version": "20261017-web2",
-  "source": "flow1 pre-compression original; no repeated lossy encoding",
-  "count": 67,
-  "before_bytes": 7660064,
-  "after_bytes": 4382486,
+  "version": "20261018-web3",
   "images": [
     {
       "path": "assets/cloud.webp",
-      "before": 97558,
-      "after": 89286,
+      "published": true,
+      "before": 89286,
+      "after": 62676,
       "size": [
-        600,
-        359
+        480,
+        287
       ],
       "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 40.91
+      "quality": 55
     },
     {
       "path": "assets/cover-clean-v4.webp",
-      "before": 207028,
-      "after": 121342,
+      "published": true,
+      "before": 121342,
+      "after": 80866,
       "size": [
-        648,
-        1152
+        540,
+        960
       ],
       "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 31.4
+      "quality": 51
     },
     {
       "path": "assets/cover-clean.webp",
-      "before": 219836,
-      "after": 129476,
+      "published": true,
+      "before": 129476,
+      "after": 86176,
       "size": [
-        648,
-        1152
+        540,
+        960
       ],
       "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 31.28
+      "quality": 51
     },
     {
       "path": "assets/cover-reference-v4.webp",
-      "before": 214206,
-      "after": 126988,
+      "published": true,
+      "before": 126988,
+      "after": 84438,
       "size": [
-        648,
-        1152
+        540,
+        960
       ],
       "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 31.42
+      "quality": 51
     },
     {
       "path": "assets/cover-reference.webp",
-      "before": 227992,
-      "after": 132890,
+      "published": true,
+      "before": 132890,
+      "after": 88468,
       "size": [
-        648,
-        1152
+        540,
+        960
       ],
       "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 31.18
+      "quality": 51
     },
     {
       "path": "assets/cover-shanbei-v3.webp",
-      "before": 178818,
-      "after": 104150,
+      "published": true,
+      "before": 104150,
+      "after": 69004,
       "size": [
-        648,
-        1152
+        540,
+        960
       ],
       "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 31.78
+      "quality": 51
     },
     {
       "path": "assets/cover.webp",
-      "before": 245878,
-      "after": 138100,
+      "published": true,
+      "before": 138100,
+      "after": 89316,
       "size": [
-        648,
-        1152
+        540,
+        960
       ],
       "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 31.07
+      "quality": 51
     },
     {
       "path": "assets/dancer.webp",
-      "before": 62662,
-      "after": 54572,
+      "published": true,
+      "before": 54572,
+      "after": 36872,
       "size": [
-        400,
-        600
+        320,
+        480
       ],
       "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 36.13
+      "quality": 55
     },
     {
-      "path": "assets/fan.webp",
-      "before": 101162,
-      "after": 89032,
+      "path": "assets/export/cloud.webp",
+      "published": false,
+      "before": 113068,
+      "after": 61272,
       "size": [
-        600,
-        427
+        480,
+        287
       ],
       "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 33.73
+      "quality": 55
     },
     {
-      "path": "assets/flower.webp",
-      "before": 178578,
-      "after": 163084,
+      "path": "assets/export/dancer.webp",
+      "published": false,
+      "before": 148994,
+      "after": 35068,
       "size": [
-        600,
-        559
+        320,
+        480
       ],
       "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 39.73
+      "quality": 55
     },
     {
-      "path": "assets/frontier.webp",
-      "before": 198400,
-      "after": 111358,
+      "path": "assets/export/fan.webp",
+      "published": false,
+      "before": 251738,
+      "after": 56182,
       "size": [
-        648,
-        1152
-      ],
-      "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 31.75
-    },
-    {
-      "path": "assets/homes-v2.webp",
-      "before": 193930,
-      "after": 111272,
-      "size": [
-        648,
-        1152
-      ],
-      "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 31.91
-    },
-    {
-      "path": "assets/homes.webp",
-      "before": 133094,
-      "after": 75392,
-      "size": [
-        648,
-        1152
-      ],
-      "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 33.63
-    },
-    {
-      "path": "assets/musician.webp",
-      "before": 61710,
-      "after": 54630,
-      "size": [
-        283,
-        600
+        480,
+        342
       ],
       "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 35.08
+      "quality": 55
     },
     {
-      "path": "assets/paper.webp",
-      "before": 2190,
-      "after": 820,
+      "path": "assets/export/flower.webp",
+      "published": false,
+      "before": 442028,
+      "after": 114062,
       "size": [
-        384,
-        384
-      ],
-      "alpha": false,
-      "quality": 64,
-      "psnr_resized_original": 44.8
-    },
-    {
-      "path": "assets/prologue.webp",
-      "before": 110730,
-      "after": 62304,
-      "size": [
-        648,
-        1152
-      ],
-      "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 34.0
-    },
-    {
-      "path": "assets/red-paper.webp",
-      "before": 3612,
-      "after": 3306,
-      "size": [
-        256,
-        256
-      ],
-      "alpha": false,
-      "quality": 64,
-      "psnr_resized_original": 40.82
-    },
-    {
-      "path": "assets/ribbon.webp",
-      "before": 35142,
-      "after": 30114,
-      "size": [
-        600,
-        385
+        480,
+        447
       ],
       "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 38.9
+      "quality": 55
     },
     {
-      "path": "assets/scissors.webp",
-      "before": 65726,
-      "after": 55930,
+      "path": "assets/export/musician.webp",
+      "published": false,
+      "before": 150862,
+      "after": 34202,
       "size": [
-        530,
-        518
+        227,
+        480
       ],
       "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 36.99
+      "quality": 55
     },
     {
-      "path": "assets/scroll-landscape.webp",
-      "before": 153548,
-      "after": 124672,
+      "path": "assets/export/ribbon.webp",
+      "published": false,
+      "before": 84488,
+      "after": 20476,
+      "size": [
+        480,
+        308
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/export/scroll-landscape.webp",
+      "published": false,
+      "before": 449392,
+      "after": 103256,
       "size": [
         1000,
         563
       ],
       "alpha": false,
-      "quality": 68,
-      "psnr_resized_original": 33.42
+      "quality": 54
+    },
+    {
+      "path": "assets/export/suona.webp",
+      "published": false,
+      "before": 95914,
+      "after": 20424,
+      "size": [
+        480,
+        307
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/export/tower.webp",
+      "published": false,
+      "before": 97954,
+      "after": 55024,
+      "size": [
+        480,
+        394
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/export/wall.webp",
+      "published": false,
+      "before": 82576,
+      "after": 24432,
+      "size": [
+        480,
+        229
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/fan.webp",
+      "published": true,
+      "before": 89032,
+      "after": 58256,
+      "size": [
+        480,
+        342
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/flower.webp",
+      "published": true,
+      "before": 163084,
+      "after": 118428,
+      "size": [
+        480,
+        447
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/frontier.webp",
+      "published": true,
+      "before": 111358,
+      "after": 72124,
+      "size": [
+        540,
+        960
+      ],
+      "alpha": false,
+      "quality": 51
+    },
+    {
+      "path": "assets/homes-v2.webp",
+      "published": true,
+      "before": 111272,
+      "after": 73192,
+      "size": [
+        540,
+        960
+      ],
+      "alpha": false,
+      "quality": 51
+    },
+    {
+      "path": "assets/homes.webp",
+      "published": true,
+      "before": 75392,
+      "after": 48742,
+      "size": [
+        540,
+        960
+      ],
+      "alpha": false,
+      "quality": 51
+    },
+    {
+      "path": "assets/musician.webp",
+      "published": true,
+      "before": 54630,
+      "after": 36114,
+      "size": [
+        226,
+        480
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/paper.webp",
+      "published": true,
+      "before": 820,
+      "after": 314,
+      "size": [
+        256,
+        256
+      ],
+      "alpha": false,
+      "quality": 48
+    },
+    {
+      "path": "assets/prologue.webp",
+      "published": true,
+      "before": 62304,
+      "after": 40774,
+      "size": [
+        540,
+        960
+      ],
+      "alpha": false,
+      "quality": 51
+    },
+    {
+      "path": "assets/red-paper.webp",
+      "published": true,
+      "before": 3306,
+      "after": 2750,
+      "size": [
+        256,
+        256
+      ],
+      "alpha": false,
+      "quality": 48
+    },
+    {
+      "path": "assets/ribbon.webp",
+      "published": true,
+      "before": 30114,
+      "after": 21656,
+      "size": [
+        480,
+        308
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/scissors.webp",
+      "published": true,
+      "before": 55930,
+      "after": 47852,
+      "size": [
+        480,
+        469
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/scroll-landscape.webp",
+      "published": true,
+      "before": 124672,
+      "after": 104120,
+      "size": [
+        1000,
+        563
+      ],
+      "alpha": false,
+      "quality": 54
     },
     {
       "path": "assets/sound.webp",
-      "before": 183460,
-      "after": 105464,
+      "published": true,
+      "before": 105464,
+      "after": 69230,
       "size": [
-        648,
-        1152
+        540,
+        960
       ],
       "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 32.33
+      "quality": 51
     },
     {
       "path": "assets/suona.webp",
-      "before": 37200,
-      "after": 31970,
+      "published": true,
+      "before": 31970,
+      "after": 21358,
       "size": [
-        600,
-        383
+        480,
+        306
       ],
       "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 37.4
+      "quality": 55
     },
     {
       "path": "assets/tower.webp",
-      "before": 92190,
-      "after": 80174,
-      "size": [
-        578,
-        475
-      ],
-      "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 34.98
-    },
-    {
-      "path": "assets/v10/table-scene.webp",
-      "before": 158558,
-      "after": 71052,
-      "size": [
-        648,
-        1152
-      ],
-      "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 33.73
-    },
-    {
-      "path": "assets/v11/drum-courtyard.webp",
-      "before": 114846,
-      "after": 63322,
-      "size": [
-        648,
-        1152
-      ],
-      "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 34.52
-    },
-    {
-      "path": "assets/v11/drum-pad.webp",
-      "before": 59922,
-      "after": 31444,
-      "size": [
-        600,
-        319
-      ],
-      "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 36.3
-    },
-    {
-      "path": "assets/v11/waist-drum.webp",
-      "before": 67692,
-      "after": 33666,
-      "size": [
-        600,
-        301
-      ],
-      "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 33.5
-    },
-    {
-      "path": "assets/v11/waist-player-leap.webp",
-      "before": 93084,
-      "after": 50512,
-      "size": [
-        411,
-        600
-      ],
-      "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 34.74
-    },
-    {
-      "path": "assets/v11/waist-player-ready.webp",
-      "before": 111596,
-      "after": 57970,
-      "size": [
-        505,
-        600
-      ],
-      "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 34.54
-    },
-    {
-      "path": "assets/v11/waist-player-strike.webp",
-      "before": 109074,
-      "after": 57756,
-      "size": [
-        402,
-        600
-      ],
-      "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 33.81
-    },
-    {
-      "path": "assets/v12/drum-courtyard-layout2.webp",
-      "before": 102752,
-      "after": 57606,
-      "size": [
-        648,
-        1152
-      ],
-      "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 34.94
-    },
-    {
-      "path": "assets/v12/meal-guoxian.webp",
-      "before": 136864,
-      "after": 42598,
+      "published": true,
+      "before": 80174,
+      "after": 55278,
       "size": [
         480,
-        246
+        394
       ],
       "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 30.15
+      "quality": 55
     },
     {
-      "path": "assets/v12/meal-jianbing.webp",
-      "before": 61058,
-      "after": 20908,
+      "path": "assets/v10/table-guoxian.webp",
+      "published": false,
+      "before": 139458,
+      "after": 39080,
       "size": [
         480,
-        179
+        303
       ],
       "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 32.0
+      "quality": 55
     },
     {
-      "path": "assets/v12/meal-sanxian.webp",
-      "before": 99726,
-      "after": 31752,
+      "path": "assets/v10/table-jianbing.webp",
+      "published": false,
+      "before": 94032,
+      "after": 28160,
       "size": [
         480,
-        246
+        308
       ],
       "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 32.03
+      "quality": 55
     },
     {
-      "path": "assets/v12/meal-yangyu.webp",
-      "before": 149952,
-      "after": 45162,
-      "size": [
-        480,
-        309
-      ],
-      "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 31.31
-    },
-    {
-      "path": "assets/v12/table-bowls.webp",
-      "before": 146240,
-      "after": 75924,
-      "size": [
-        648,
-        1152
-      ],
-      "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 33.69
-    },
-    {
-      "path": "assets/v14/empty-dish.webp",
-      "before": 55020,
-      "after": 23682,
-      "size": [
-        480,
-        285
-      ],
-      "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 31.32
-    },
-    {
-      "path": "assets/v14/empty-soup.webp",
-      "before": 61040,
-      "after": 25518,
-      "size": [
-        480,
-        270
-      ],
-      "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 30.41
-    },
-    {
-      "path": "assets/v14/served-guoxian.webp",
-      "before": 140818,
-      "after": 51862,
-      "size": [
-        480,
-        305
-      ],
-      "alpha": true,
-      "quality": 74,
-      "psnr_resized_original": 28.75
-    },
-    {
-      "path": "assets/v14/served-jianbing.webp",
-      "before": 148416,
-      "after": 54198,
-      "size": [
-        480,
-        312
-      ],
-      "alpha": true,
-      "quality": 74,
-      "psnr_resized_original": 28.78
-    },
-    {
-      "path": "assets/v14/served-sanxian.webp",
-      "before": 125534,
-      "after": 47620,
-      "size": [
-        480,
-        327
-      ],
-      "alpha": true,
-      "quality": 74,
-      "psnr_resized_original": 28.94
-    },
-    {
-      "path": "assets/v14/served-yangyu.webp",
-      "before": 154510,
-      "after": 53814,
+      "path": "assets/v10/table-sanxian.webp",
+      "published": false,
+      "before": 149012,
+      "after": 44062,
       "size": [
         480,
         314
       ],
       "alpha": true,
-      "quality": 74,
-      "psnr_resized_original": 28.97
+      "quality": 55
     },
     {
-      "path": "assets/v14/shanbei-scroll.webp",
-      "before": 446202,
-      "after": 308052,
+      "path": "assets/v10/table-scene.webp",
+      "published": true,
+      "before": 71052,
+      "after": 40906,
       "size": [
-        1800,
-        1013
+        540,
+        960
       ],
       "alpha": false,
-      "quality": 69,
-      "psnr_resized_original": 33.2
+      "quality": 51
     },
     {
-      "path": "assets/v4/paper.webp",
-      "before": 932,
-      "after": 396,
+      "path": "assets/v10/table-yangyu.webp",
+      "published": false,
+      "before": 117530,
+      "after": 35792,
       "size": [
-        216,
-        384
+        480,
+        310
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v11/drum-courtyard.webp",
+      "published": true,
+      "before": 63322,
+      "after": 40932,
+      "size": [
+        540,
+        960
       ],
       "alpha": false,
-      "quality": 64,
-      "psnr_resized_original": 42.63
+      "quality": 51
     },
     {
-      "path": "assets/v4/redpaper.webp",
-      "before": 13088,
-      "after": 4940,
+      "path": "assets/v11/drum-pad.webp",
+      "published": true,
+      "before": 31444,
+      "after": 20216,
       "size": [
-        216,
-        384
+        480,
+        255
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v11/waist-drum.webp",
+      "published": true,
+      "before": 33666,
+      "after": 21584,
+      "size": [
+        480,
+        241
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v11/waist-player-leap.webp",
+      "published": true,
+      "before": 50512,
+      "after": 33606,
+      "size": [
+        328,
+        480
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v11/waist-player-ready.webp",
+      "published": true,
+      "before": 57970,
+      "after": 37604,
+      "size": [
+        404,
+        480
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v11/waist-player-strike.webp",
+      "published": true,
+      "before": 57756,
+      "after": 37206,
+      "size": [
+        321,
+        480
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v12/drum-courtyard-layout2.webp",
+      "published": true,
+      "before": 57606,
+      "after": 37758,
+      "size": [
+        540,
+        960
       ],
       "alpha": false,
-      "quality": 64,
-      "psnr_resized_original": 33.97
+      "quality": 51
     },
     {
-      "path": "assets/v4/window-closeup.webp",
-      "before": 145798,
-      "after": 76810,
+      "path": "assets/v12/meal-guoxian.webp",
+      "published": true,
+      "before": 42598,
+      "after": 23284,
       "size": [
-        648,
-        1152
+        360,
+        184
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v12/meal-jianbing.webp",
+      "published": true,
+      "before": 20908,
+      "after": 12338,
+      "size": [
+        360,
+        134
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v12/meal-sanxian.webp",
+      "published": true,
+      "before": 31752,
+      "after": 18400,
+      "size": [
+        360,
+        185
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v12/meal-yangyu.webp",
+      "published": true,
+      "before": 45162,
+      "after": 24454,
+      "size": [
+        360,
+        232
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v12/table-bowls.webp",
+      "published": true,
+      "before": 75924,
+      "after": 45556,
+      "size": [
+        540,
+        960
       ],
       "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 33.31
+      "quality": 51
     },
     {
-      "path": "assets/v4/window-quiet.webp",
-      "before": 88260,
-      "after": 44862,
+      "path": "assets/v13/empty-dish.webp",
+      "published": false,
+      "before": 39828,
+      "after": 13398,
       "size": [
-        648,
-        1152
+        480,
+        100
       ],
-      "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 34.85
+      "alpha": true,
+      "quality": 55
     },
     {
-      "path": "assets/v4/window.webp",
-      "before": 200450,
-      "after": 112722,
+      "path": "assets/v13/empty-soup.webp",
+      "published": false,
+      "before": 88690,
+      "after": 26708,
       "size": [
-        648,
-        1152
+        480,
+        272
       ],
-      "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 31.96
+      "alpha": true,
+      "quality": 55
     },
     {
-      "path": "assets/v4/workshop-quiet.webp",
-      "before": 35776,
-      "after": 18952,
+      "path": "assets/v13/served-guoxian.webp",
+      "published": false,
+      "before": 61082,
+      "after": 19198,
       "size": [
-        648,
-        1152
+        480,
+        141
       ],
-      "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 38.93
+      "alpha": true,
+      "quality": 55
     },
     {
-      "path": "assets/v4/workshop.webp",
-      "before": 161422,
-      "after": 89494,
+      "path": "assets/v13/served-jianbing.webp",
+      "published": false,
+      "before": 76508,
+      "after": 20838,
       "size": [
-        648,
-        1152
+        480,
+        132
       ],
-      "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 32.2
+      "alpha": true,
+      "quality": 55
     },
     {
-      "path": "assets/v5/cave.webp",
-      "before": 107556,
-      "after": 64686,
+      "path": "assets/v13/served-sanxian.webp",
+      "published": false,
+      "before": 125574,
+      "after": 38326,
       "size": [
-        600,
+        480,
         328
       ],
       "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 31.33
+      "quality": 55
+    },
+    {
+      "path": "assets/v13/served-yangyu.webp",
+      "published": false,
+      "before": 61432,
+      "after": 19228,
+      "size": [
+        480,
+        143
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v13/shanbei-scroll.webp",
+      "published": false,
+      "before": 578300,
+      "after": 290990,
+      "size": [
+        1600,
+        900
+      ],
+      "alpha": false,
+      "quality": 56
+    },
+    {
+      "path": "assets/v14/empty-dish.webp",
+      "published": true,
+      "before": 23682,
+      "after": 14800,
+      "size": [
+        360,
+        214
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v14/empty-soup.webp",
+      "published": true,
+      "before": 25518,
+      "after": 15332,
+      "size": [
+        360,
+        203
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v14/served-guoxian.webp",
+      "published": true,
+      "before": 51862,
+      "after": 29250,
+      "size": [
+        360,
+        229
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v14/served-jianbing.webp",
+      "published": true,
+      "before": 54198,
+      "after": 30094,
+      "size": [
+        360,
+        234
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v14/served-sanxian.webp",
+      "published": true,
+      "before": 47620,
+      "after": 26382,
+      "size": [
+        360,
+        245
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v14/served-yangyu.webp",
+      "published": true,
+      "before": 53814,
+      "after": 29708,
+      "size": [
+        360,
+        236
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v14/shanbei-scroll.webp",
+      "published": true,
+      "before": 308052,
+      "after": 231280,
+      "size": [
+        1600,
+        900
+      ],
+      "alpha": false,
+      "quality": 56
+    },
+    {
+      "path": "assets/v4/paper.webp",
+      "published": true,
+      "before": 396,
+      "after": 154,
+      "size": [
+        144,
+        256
+      ],
+      "alpha": false,
+      "quality": 48
+    },
+    {
+      "path": "assets/v4/redpaper.webp",
+      "published": true,
+      "before": 4940,
+      "after": 992,
+      "size": [
+        144,
+        256
+      ],
+      "alpha": false,
+      "quality": 48
+    },
+    {
+      "path": "assets/v4/window-closeup.webp",
+      "published": true,
+      "before": 76810,
+      "after": 47158,
+      "size": [
+        540,
+        960
+      ],
+      "alpha": false,
+      "quality": 51
+    },
+    {
+      "path": "assets/v4/window-quiet.webp",
+      "published": true,
+      "before": 44862,
+      "after": 26886,
+      "size": [
+        540,
+        960
+      ],
+      "alpha": false,
+      "quality": 51
+    },
+    {
+      "path": "assets/v4/window.webp",
+      "published": true,
+      "before": 112722,
+      "after": 71398,
+      "size": [
+        540,
+        960
+      ],
+      "alpha": false,
+      "quality": 51
+    },
+    {
+      "path": "assets/v4/workshop-quiet.webp",
+      "published": true,
+      "before": 18952,
+      "after": 12084,
+      "size": [
+        540,
+        960
+      ],
+      "alpha": false,
+      "quality": 51
+    },
+    {
+      "path": "assets/v4/workshop.webp",
+      "published": true,
+      "before": 89494,
+      "after": 57928,
+      "size": [
+        540,
+        960
+      ],
+      "alpha": false,
+      "quality": 51
+    },
+    {
+      "path": "assets/v5/cave.webp",
+      "published": true,
+      "before": 64686,
+      "after": 40544,
+      "size": [
+        480,
+        263
+      ],
+      "alpha": true,
+      "quality": 55
     },
     {
       "path": "assets/v5/heritage-paper.webp",
-      "before": 6538,
-      "after": 3380,
+      "published": true,
+      "before": 3380,
+      "after": 1326,
       "size": [
-        216,
-        384
+        144,
+        256
       ],
       "alpha": false,
-      "quality": 64,
-      "psnr_resized_original": 35.6
+      "quality": 48
     },
     {
       "path": "assets/v5/pagoda.webp",
-      "before": 69292,
-      "after": 41830,
+      "published": true,
+      "before": 41830,
+      "after": 25690,
       "size": [
-        315,
-        600
+        252,
+        480
       ],
       "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 32.59
+      "quality": 55
     },
     {
       "path": "assets/v5/tongwan.webp",
-      "before": 75306,
-      "after": 48738,
+      "published": true,
+      "before": 48738,
+      "after": 31314,
       "size": [
-        600,
-        271
+        480,
+        217
       ],
       "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 32.54
+      "quality": 55
     },
     {
       "path": "assets/v6/cave-scene.webp",
-      "before": 93090,
-      "after": 51864,
+      "published": true,
+      "before": 51864,
+      "after": 33700,
       "size": [
-        648,
-        1152
+        540,
+        960
       ],
       "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 34.95
+      "quality": 51
     },
     {
       "path": "assets/v6/frontier-scene.webp",
-      "before": 115720,
-      "after": 64414,
+      "published": true,
+      "before": 64414,
+      "after": 40926,
       "size": [
-        648,
-        1152
+        540,
+        960
       ],
       "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 33.33
+      "quality": 51
     },
     {
       "path": "assets/v6/pagoda-scene.webp",
-      "before": 108138,
-      "after": 60968,
+      "published": true,
+      "before": 60968,
+      "after": 39458,
       "size": [
-        648,
-        1152
+        540,
+        960
       ],
       "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 33.66
+      "quality": 51
     },
     {
       "path": "assets/v6/route-paper.webp",
-      "before": 13990,
-      "after": 7718,
+      "published": true,
+      "before": 7718,
+      "after": 3092,
       "size": [
-        216,
-        384
+        144,
+        256
       ],
       "alpha": false,
-      "quality": 64,
-      "psnr_resized_original": 31.59
+      "quality": 48
     },
     {
       "path": "assets/v6/tongwan-scene.webp",
-      "before": 93296,
-      "after": 50304,
+      "published": true,
+      "before": 50304,
+      "after": 31930,
       "size": [
-        648,
-        1152
+        540,
+        960
       ],
       "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 34.65
+      "quality": 51
     },
     {
       "path": "assets/v7/cave-scene.webp",
-      "before": 109384,
-      "after": 61832,
+      "published": true,
+      "before": 61832,
+      "after": 39018,
       "size": [
-        648,
-        1152
+        540,
+        960
       ],
       "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 34.58
+      "quality": 51
     },
     {
       "path": "assets/v7/cave.webp",
-      "before": 135824,
-      "after": 66952,
+      "published": true,
+      "before": 66952,
+      "after": 41602,
       "size": [
-        600,
-        331
+        480,
+        264
       ],
       "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 30.27
+      "quality": 55
     },
     {
       "path": "assets/v7/frontier-scene.webp",
-      "before": 84686,
-      "after": 46586,
+      "published": true,
+      "before": 46586,
+      "after": 29850,
       "size": [
-        648,
-        1152
+        540,
+        960
       ],
       "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 35.26
+      "quality": 51
     },
     {
       "path": "assets/v7/pagoda-scene.webp",
-      "before": 100518,
-      "after": 56588,
+      "published": true,
+      "before": 56588,
+      "after": 35992,
       "size": [
-        648,
-        1152
+        540,
+        960
       ],
       "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 34.13
+      "quality": 51
     },
     {
       "path": "assets/v7/tongwan-scene.webp",
-      "before": 89674,
-      "after": 49964,
+      "published": true,
+      "before": 49964,
+      "after": 32040,
       "size": [
-        648,
-        1152
+        540,
+        960
       ],
       "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 35.42
+      "quality": 51
     },
     {
       "path": "assets/v7/wall.webp",
-      "before": 64670,
-      "after": 31702,
+      "published": true,
+      "before": 31702,
+      "after": 19534,
       "size": [
-        600,
-        286
+        480,
+        229
       ],
       "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 33.42
+      "quality": 55
+    },
+    {
+      "path": "assets/v8/drum-yard.webp",
+      "published": false,
+      "before": 180954,
+      "after": 52380,
+      "size": [
+        540,
+        960
+      ],
+      "alpha": false,
+      "quality": 51
+    },
+    {
+      "path": "assets/v8/drummer-leap.webp",
+      "published": false,
+      "before": 131632,
+      "after": 44928,
+      "size": [
+        334,
+        480
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v8/drummer-ready.webp",
+      "published": false,
+      "before": 140150,
+      "after": 47924,
+      "size": [
+        321,
+        480
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v8/drummer-strike.webp",
+      "published": false,
+      "before": 147734,
+      "after": 48468,
+      "size": [
+        338,
+        480
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v8/fish-lotus.webp",
+      "published": false,
+      "before": 213914,
+      "after": 85524,
+      "size": [
+        480,
+        319
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v8/year-courtyard.webp",
+      "published": false,
+      "before": 159998,
+      "after": 56706,
+      "size": [
+        540,
+        960
+      ],
+      "alpha": false,
+      "quality": 51
+    },
+    {
+      "path": "assets/v8/year-window.webp",
+      "published": false,
+      "before": 96042,
+      "after": 30540,
+      "size": [
+        540,
+        960
+      ],
+      "alpha": false,
+      "quality": 51
+    },
+    {
+      "path": "assets/v9/food-guoxian.webp",
+      "published": false,
+      "before": 155872,
+      "after": 43976,
+      "size": [
+        480,
+        299
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v9/food-jianbing.webp",
+      "published": false,
+      "before": 139830,
+      "after": 39656,
+      "size": [
+        480,
+        287
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v9/food-kitchen.webp",
+      "published": false,
+      "before": 99414,
+      "after": 29336,
+      "size": [
+        540,
+        960
+      ],
+      "alpha": false,
+      "quality": 51
+    },
+    {
+      "path": "assets/v9/food-sanxian.webp",
+      "published": false,
+      "before": 166384,
+      "after": 47190,
+      "size": [
+        480,
+        324
+      ],
+      "alpha": true,
+      "quality": 55
+    },
+    {
+      "path": "assets/v9/food-yangyu.webp",
+      "published": false,
+      "before": 167986,
+      "after": 45990,
+      "size": [
+        480,
+        310
+      ],
+      "alpha": true,
+      "quality": 55
     },
     {
       "path": "assets/wall.webp",
-      "before": 44182,
-      "after": 38858,
+      "published": true,
+      "before": 38858,
+      "after": 25420,
       "size": [
-        600,
-        286
+        480,
+        229
       ],
       "alpha": true,
-      "quality": 68,
-      "psnr_resized_original": 36.92
+      "quality": 55
     },
     {
       "path": "assets/yangge.webp",
-      "before": 154920,
-      "after": 87182,
+      "published": true,
+      "before": 87182,
+      "after": 57166,
       "size": [
-        648,
-        1152
+        540,
+        960
       ],
       "alpha": false,
-      "quality": 65,
-      "psnr_resized_original": 32.99
+      "quality": 51
     }
   ],
-  "reduction_percent": 42.8
+  "source": "flow1 pre-compression originals",
+  "all_count": 100,
+  "all_before_bytes": 9630856,
+  "all_after_bytes": 4556692,
+  "published_count": 67,
+  "before_bytes": 4382486,
+  "after_bytes": 2883896,
+  "reduction_percent": 34.2
 }

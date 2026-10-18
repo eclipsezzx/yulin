@@ -18,8 +18,8 @@ YL.details.attach=function(key,scope){const g=YL.art.svg('g',{'data-site-details
 YL.food.version='20261017-bowls2';YL.table.version=YL.food.version;
 YL.food.box=function(key){const a=YL.tableArt[key],w=Math.min(174,96*a.width/a.height),h=w*a.height/a.width;return{x:(375-w)/2,y:350+(106-h)/2,w,h};};
 YL.food.target=function(key,index){const a=YL.tableArt[key],center=[{x:109,y:375},{x:267,y:378},{x:106,y:438},{x:272,y:455}][index],w=Math.min(index===1?113:109,55*a.width/a.height),h=w*a.height/a.width;return{x:center.x-w/2,y:center.y+7-h,w,h};};
-YL.food.background=function(){const img=YL.$('#fold-scene');img.className='scene-art scene-dining-table';img.src=`assets/v12/table-bowls.webp?v=${this.version}`;img.alt='窑洞人家的木餐桌上，预先放好的四只空碗盘；餐具为固定背景';};
-YL.food.asset=function(key){return `assets/v12/${YL.tableArt[key].asset}.webp?v=${this.version}`;};
+YL.food.background=function(){const img=YL.$('#fold-scene');img.className='scene-art scene-dining-table';img.src=`assets/v12/table-bowls.webp?v=20261018-web3`;img.alt='窑洞人家的木餐桌上，预先放好的四只空碗盘；餐具为固定背景';};
+YL.food.asset=function(key){return `assets/v12/${YL.tableArt[key].asset}.webp?v=20261018-web3`;};
 YL.food.open=function(d){if(YL.game.paused||!['table','read','final'].includes(this.mode))return;return YL.editorial.foodCard(d);};
 YL.waist.version=YL.editorial.version;YL.waist.hero={x:105,y:281,w:165,h:196};YL.waist.sides=[{x:2,y:331,w:101,h:120},{x:272,y:331,w:101,h:120}];
 YL.waist.scene=function(equipped=true){const g=YL.art.svg('g',{'data-folk':'waist-scene'},YL.game.svg);for(const b of this.sides)this.actor(g,'waist-player-ready',b,true);this.actor(g,'waist-player-ready',this.hero,equipped);return g;};
@@ -28,4 +28,4 @@ YL.waist.hotspots=function(scope){const A=YL.art,b=this.fit('waist-player-ready'
 const editorialOverview=YL.route.overview.bind(YL.route);YL.route.overview=async function(scope){this.mode('story');this.background('frontier-scene');YL.$('#heritage-place').textContent='';await YL.editorial.intro(['风越过黄土山梁，长城、高台和古塔，依次露出轮廓。','从墙垣走到窑院，看看陕北的人怎样顺着山势，留下守望与生活的痕迹。'],scope);return editorialOverview(scope);};
 YL.v3.help=function(){YL.ui.modal({kicker:'纸上陕北',title:'从剪口走进地方生活',body:'<p>各章先读两句引入语，轻触旁白继续。旁白框随实际文字收拢。沿引导剪纸，松手可续剪；剪好的食物拖入桌上固定碗盘，腰鼓拖到人物腰间。</p><p>文化知识和带名称的红色热点均可选阅读，知识卡可展开更多。第三章跟随十五秒真实安塞腰鼓演出节选点按左右鼓面，也可直接观看。进度保存在本机，本次制作到第三章。</p>',buttons:[{label:'继续体验'}]});};
 
-const editorialBackground=YL.waist.background.bind(YL.waist);YL.waist.background=function(){editorialBackground();YL.$('#fold-scene').src='assets/v12/drum-courtyard-layout2.webp?v='+YL.editorial.version;YL.$('#heritage-place').textContent='';YL.$('#heritage-place').setAttribute('aria-hidden','true');};
+const editorialBackground=YL.waist.background.bind(YL.waist);YL.waist.background=function(){editorialBackground();YL.$('#fold-scene').src='assets/v12/drum-courtyard-layout2.webp?v=20261018-web3';YL.$('#heritage-place').textContent='';YL.$('#heritage-place').setAttribute('aria-hidden','true');};

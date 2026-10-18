@@ -1,0 +1,30 @@
+{
+  "version": "20261018-web3",
+  "before_bytes": 490850,
+  "after_bytes": 186515,
+  "audio": [
+    {
+      "path": "assets/v11/ansai-15s.m4a",
+      "before": 245069,
+      "after": 93248,
+      "codec": "AAC-LC",
+      "bitrate": 48000,
+      "sample_rate": 32000,
+      "channels": 1,
+      "duration_seconds": 15,
+      "source_sha256": "22fba267e6034f1e2081dd509d9cc0f84dfdfe919f7d4bae7d4e3397f1b70bbc"
+    },
+    {
+      "path": "assets/v13/suona-dabaidui-25-40.m4a",
+      "before": 245781,
+      "after": 93267,
+      "codec": "AAC-LC",
+      "bitrate": 48000,
+      "sample_rate": 32000,
+      "channels": 1,
+      "duration_seconds": 15,
+      "source_sha256": "3649cad49fd4540dda49aa49e09f19b7c2f4a4577710265720c895af69d3bf17"
+    }
+  ],
+  "reduction_percent": 62.0
+}
