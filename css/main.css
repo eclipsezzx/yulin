@@ -236,3 +236,6 @@ body.font-home{font-family:HomeSerif,serif}
 .knowledge .modal-body,.knowledge .modal-body p,.knowledge .modal-body p *,.knowledge .modal-body b,.knowledge .modal-body strong{font-weight:400}
 
 @font-face{font-family:SourceHanSerif;src:url('../assets/v16/home-song.woff2?v=20261018-web3') format('woff2');font-weight:200 900;font-display:swap;unicode-range:U+00B7}
+
+/* Keep the completion action and export status clear on the 375×667 page. */
+.roll-result .result-actions{gap:8px}.roll-result .return-cover{min-height:40px;font-size:15px}.roll-result .export-status{top:631px;font-size:11px}

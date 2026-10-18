@@ -10,7 +10,8 @@ YL.interact.cut=async function(step,scope){
  const paper=A.svg('path',{class:'paper-blank',d:sheetD,fill:'url(#redPaper)',filter:'url(#paperLift)'},task);
  const outline=A.path(key,box),guide=A.svg('path',{class:'guide cut-guide',d:outline},task);
  const total=guide.getTotalLength(),N=300;
- const refs=Array.from({length:N+1},(_,i)=>guide.getPointAtLength(total*i/N));
+ const baseRefs=Array.from({length:N+1},(_,i)=>guide.getPointAtLength(total*i/N));
+ let refs=baseRefs,direction=0;task.dataset.cutDirection="pending";
  const start=refs[0],halo=A.svg('circle',{class:'start-halo',cx:start.x,cy:start.y,r:12},task);
  const dot=A.svg('circle',{class:'start-dot',cx:start.x,cy:start.y,r:5},task);
  const seamShadow=A.svg('path',{class:'actual-cut-shadow',d:'',fill:'none',stroke:'#762518','stroke-width':3.5,'stroke-linecap':'round','stroke-linejoin':'round'},task);
@@ -23,7 +24,7 @@ YL.interact.cut=async function(step,scope){
  const clearDrift=()=>{badSince=null;badTravel=0;};
  const paint=()=>{const d=pathFor(trace);seam.setAttribute('d',d);seamShadow.setAttribute('d',d);YL.$('#progress-bar').style.width=(100*idx/N).toFixed(1)+'%';};
  await scope.promise(done=>{
-  const resetAttempt=()=>{idx=0;trace=[];tip={x:start.x,y:start.y};dragging=false;activePointer=null;lastRaw=null;failed=false;clearDrift();scissors.setAttribute('transform',`translate(${start.x},${start.y})`);scissors.style.opacity='1';paint();YL.game.setHint(step.hint||'');YL.game.skipper=()=>finish(true);};
+  const resetAttempt=()=>{refs=baseRefs;direction=0;task.dataset.cutDirection="pending";idx=0;trace=[];tip={x:start.x,y:start.y};dragging=false;activePointer=null;lastRaw=null;failed=false;clearDrift();scissors.setAttribute('transform',`translate(${start.x},${start.y})`);scissors.style.opacity='1';paint();YL.game.setHint(step.hint||'');YL.game.skipper=()=>finish(true);};
   const fail=async()=>{
    if(finished||failed||scope.signal.aborted)return;failed=true;dragging=false;
    if(activePointer!==null&&svg.hasPointerCapture?.(activePointer))svg.releasePointerCapture(activePointer);
@@ -56,6 +57,7 @@ YL.interact.cut=async function(step,scope){
    }catch{}
   };
   const accept=p=>{
+   if(!direction){direction=YL.cutDirection.choose(baseRefs,p,22);if(direction){refs=direction<0?[...baseRefs].reverse():baseRefs;task.dataset.cutDirection=direction<0?"reverse":"forward";}else{if(Math.hypot(p.x-tip.x,p.y-tip.y)>.75){trace.push({...p});tip={...p};}return true;}}
    let best=idx,dist=Infinity;for(let j=Math.max(0,idx-2);j<=Math.min(N,idx+22);j++){const d=Math.hypot(p.x-refs[j].x,p.y-refs[j].y);if(d<dist){dist=d;best=j;}}
    // Contour corridor rejects shortcuts and large deviations. It never snaps the actual edge onto the guide.
    if(dist>(step.easy?23:16)||best<idx-2)return false;
