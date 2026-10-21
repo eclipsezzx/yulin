@@ -1,5 +1,7 @@
 # 纸上陕北
 
+**当前最新20261021-credit1**：[公开入口](https://eclipsezzx.github.io/yulin/?v=20261021-credit1)。音乐来源卡分项展示作者、曲目名、原链接和中文许可说明，删去文件名及音频制作术语；音乐、鼓声、流程与存档不变。[本轮说明](docs/本轮修改说明-credit1.md)。以下均为历史记录。
+
 **当前最新20261021-audio1**：[公开入口](https://eclipsezzx.github.io/yulin/?v=20261021-audio1)。第四章换为 xserra / Freesound 的 CC BY 4.0 唢呐音色示例，保留简短署名/来源/许可；安塞腰鼓互动增加点击鼓声。其余内容和存档沿用 collection2。[本轮说明](docs/本轮修改说明-audio1.md)。以下均为历史记录。
 
 **当前最新20261021-collection2**：[公开入口](https://eclipsezzx.github.io/yulin/?v=20261021-collection2)。修复终章旧素材混入：只展示当前版本的剪纸，“陕北人家”仅洋芋擦擦、子长煎饼；云纹和已删建筑/食物/旧道具不展示，旧剪口存档保留。见[本轮修复说明](docs/本轮修复说明-collection2.md)。下文为历史记录。

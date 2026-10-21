@@ -1322,7 +1322,7 @@ YL.editorial={
  foodCard(d){const key='meal-'+d.key;YL.cards[key]={title:d.name,body:d.pages[0],more:'<h3>食材手艺</h3><p>'+d.pages[1]+'</p><h3>入口滋味</h3><p>'+d.pages[2]+'</p>',sources:d.sources};return YL.ui.card(key);}
 };
 // A shared paper card keeps the original chapter-four reading and expand interaction.
-YL.ui.card=function(key){const c=YL.cards[key];if(!c)return Promise.resolve();const sourceOnly=typeof c.more==='string'&&c.more.trim().startsWith('<p class="source-links">'),extra=sourceOnly?'':c.more,sources=c.sources?YL.heritage.links(c.sources):sourceOnly?c.more:'';return this.modal({kicker:'文化知识'+(extra?' · 可展开':''),title:c.title,body:`<p>${c.body}</p>${extra?`<div class="modal-extra" hidden>${extra}</div>`:''}${sources}`,className:'knowledge'+(key.startsWith('meal-')?' meal-knowledge':''),buttons:[{label:extra?'展开更多':'知道了',keep:true,action:n=>{const more=YL.$('.modal-extra');if(more?.hidden){more.hidden=false;n.textContent='知道了';}else this.closeModal();}}]}).then(()=>{});};
+YL.ui.card=function(key){const c=YL.cards[key];if(!c)return Promise.resolve();const sourceOnly=typeof c.more==='string'&&c.more.trim().startsWith('<p class="source-links">'),extra=sourceOnly?'':c.more,sources=c.sources?YL.heritage.links(c.sources):sourceOnly?c.more:'';return this.modal({kicker:'文化知识'+(extra?' · 可展开':''),title:c.title,body:`<p>${c.body}</p>${extra?`<div class="modal-extra" hidden>${extra}</div>`:''}${sources}`,className:'knowledge'+(key.startsWith('meal-')?' meal-knowledge':'')+(key==='suona-recording'?' music-credit':''),buttons:[{label:extra?'展开更多':'知道了',keep:true,action:n=>{const more=YL.$('.modal-extra');if(more?.hidden){more.hidden=false;n.textContent='知道了';}else this.closeModal();}}]}).then(()=>{});};
 // Labelled ring-and-dot hotspots, rather than a second kind of round knowledge badge.
 YL.details.attach=function(key,scope){const g=YL.art.svg('g',{'data-site-details':key},YL.game.svg);for(const [label,x,y,lx,ly,card]of this.sites[key]||[])YL.editorial.hotspot(g,{x,y,label,key:card,attrs:{'data-detail':card,class:'hotspot editorial-hotspot site-detail'}},scope);return g;};
 YL.food.version='20261017-bowls2';YL.table.version=YL.food.version;
@@ -1369,8 +1369,8 @@ YL.food.place=async function(d,index,scope){
 };
 YL.suonaRecording={title:'beijing-opera-7.wav',author:'xserra',publisher:'Freesound',source:'https://freesound.org/people/xserra/sounds/162035/',license:'CC BY 4.0',licenseUrl:'https://creativecommons.org/licenses/by/4.0/',excerpt:[0,15],duration:15};
 YL.soundScore={...YL.soundScore,audio:'assets/v24/suona-example-15s.m4a?v=20261021-audio1',durationMs:15000,melody:[],drums:[]};YL.audio.soundBuffer=null;YL.audio.soundPromise=null;
-YL.cards['suona-recording']={title:'音乐来源与署名',body:'beijing-opera-7.wav — xserra / Freesound。CC BY 4.0。节选 15 秒，已做淡入淡出与压缩。',sources:[['xserra · Freesound 原文件',YL.suonaRecording.source],['CC BY 4.0 · 许可',YL.suonaRecording.licenseUrl]]};
-const servingSound=YL.interact.soundMusic.bind(YL.interact);YL.interact.soundMusic=async function(step,scope){const credit=document.createElement('button');credit.id='suona-credit';credit.className='suona-credit';credit.textContent='音色示例 · xserra / Freesound · CC BY 4.0 ›';credit.setAttribute('aria-label','音乐来源与署名');YL.$('#game-screen').append(credit);scope.event(credit,'click',()=>{if(!YL.game.paused)YL.ui.card('suona-recording');});try{return await servingSound(step,scope);}finally{credit.remove();}};
+YL.cards['suona-recording']={title:'音乐来源与署名',body:`作者：xserra（录音者）</p><p>曲目名：原作者未提供。</p><p>原链接：<a href="${YL.suonaRecording.source}" target="_blank" rel="noopener noreferrer">查看 Freesound 原始页面</a></p><p>许可说明：采用<a href="https://creativecommons.org/licenses/by/4.0/deed.zh-hans" target="_blank" rel="noopener noreferrer">“知识共享·署名4.0”许可（CC BY 4.0）</a>。保留作者署名和来源，即可使用、改编和分享。此处为录音节选。`};
+const servingSound=YL.interact.soundMusic.bind(YL.interact);YL.interact.soundMusic=async function(step,scope){const credit=document.createElement('button');credit.id='suona-credit';credit.className='suona-credit';credit.textContent='唢呐音色示例 · 音乐来源 ›';credit.setAttribute('aria-label','音乐来源与署名');YL.$('#game-screen').append(credit);scope.event(credit,'click',()=>{if(!YL.game.paused)YL.ui.card('suona-recording');});try{return await servingSound(step,scope);}finally{credit.remove();}};
 for(const step of YL.chapters[4].steps){if(step.type==='soundMusic')step.duration=15;if(step.type==='say'&&step.tags?.some(t=>t[1]==='suonaCulture')){step.text='声音从哨片起，穿过木杆，扬出铜碗。再看看这杆唢呐，听一听它的门道。';step.tags.push(['音乐来源与署名','suona-recording']);}}
 const servingMap=YL.game.map.bind(YL.game);YL.game.map=async function(){await servingMap();for(const n of document.querySelectorAll('.chapter-row small'))n.textContent=n.textContent.replace(/\s*·?\s*此前版本/g,'');};
 
@@ -1594,7 +1594,7 @@ YL.v3.help=function(){YL.ui.modal({kicker:'纸上陕北',title:'从剪口走进�
 
 
 'use strict';
-YL.flow={version:'20261021-audio1'};
+YL.flow={version:'20261021-credit1'};
 YL.scroll.version=YL.flow.version;
 // Chapters four and five share the same paper-page entrance as the earlier chapters.
 const flowStart=YL.game.start.bind(YL.game);

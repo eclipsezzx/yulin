@@ -252,3 +252,5 @@ body.font-home{font-family:HomeSerif,serif}
 @font-face{font-family:SourceHanSerif;src:url('../assets/v21/reading-extra.woff2?v=20261021-collection1') format('woff2');font-weight:200 900;font-display:swap;unicode-range:U+518C,U+58C1,U+5C01,U+65E9,U+90A3,U+95FB}
 
 @font-face{font-family:SourceHanSerif;src:url('../assets/v24/reading-extra.woff2?v=20261021-audio1') format('woff2');font-weight:200 900;font-display:swap;unicode-range:U+7F72}
+
+.knowledge.music-credit .modal-body p{text-indent:0;text-align:left}.music-credit .modal-body a{color:#A52B1C;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
