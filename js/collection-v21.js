@@ -102,4 +102,4 @@ YL.collage.shareImage=async function(){
 };
 Object.assign(YL.chapters[5],{name:'展开陕北',desc:'我的陕北剪纸',gain:'陕北剪纸',end:'每一道剪口，都是自己的模样。',steps:[{type:'say',text:'窗上的花，山间的城，桌上的饭食，院中的鼓乐。一张张纸，留下了这一程的见闻。'},{type:'say',text:'把亲手剪出的作品一一展开。那些转弯、留白和镂空，都是你落下的剪口。收好它们，也把陕北的故事分享出去。'},{type:'collection'}]});
 const collectionMap=YL.game.map.bind(YL.game);YL.game.map=async function(){await collectionMap();const row=YL.$('[data-chapter="5"]');if(row){row.querySelector('small').textContent='终章 · 我的陕北剪纸';row.querySelector('img').src='assets/v4/redpaper.webp?v=20261018-web3';row.querySelector('img').alt='陕北剪纸作品册';}};
-YL.v3.help=function(){YL.ui.modal({kicker:'纸上陕北',title:'从剪口走进地方生活',body:'<p>序章折剪窗花；第一章走近长城、镇北台、延安宝塔与窑洞；第二章剪出洋芋擦擦和子长煎饼，盛上餐桌；再去体验安塞腰鼓，听陕北唢呐。</p><p>沿线可从两个方向起剪，松手可以续剪，右上角可辅助完成。文化知识和热点可选阅读，出处在卡片下方。终章自动收好全部剪纸，保留自己的剪口，可以保存完整长图并分享。进度保存在当前浏览器。</p>',buttons:[{label:'继续体验'}]});};
+YL.v3.help=function(){YL.ui.modal({kicker:'纸上陕北',title:'从剪口走进地方生活',body:'<p>序章折剪窗花；第一章走近长城、镇北台、延安宝塔与窑洞；第二章剪出洋芋擦擦和子长煎饼，盛上餐桌；再去体验安塞腰鼓，认识绥米唢呐，聆听唢呐音色示例。</p><p>沿线可从两个方向起剪，松手可以续剪，右上角可辅助完成。文化知识和热点可选阅读，出处在卡片下方。终章自动收好全部剪纸，保留自己的剪口，可以保存完整长图并分享。进度保存在当前浏览器。</p>',buttons:[{label:'继续体验'}]});};

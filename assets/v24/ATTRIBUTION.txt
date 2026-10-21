@@ -1,0 +1,12 @@
+beijing-opera-7.wav — xserra / Freesound
+Source: https://freesound.org/people/xserra/sounds/162035/
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+License terms: https://creativecommons.org/licenses/by/4.0/
+Changes: first 15 seconds excerpted; loudness adjusted; short fades added;
+converted from the author's public MP3 preview to 32 kHz mono AAC, 48 kb/s.
+The recording is used as a suona timbre example, not identified as a Shaanbei
+traditional tune. No endorsement by the recording author is implied.
+
+CC BY 4.0 allows sharing and adaptation, including commercial use, subject
+to attribution, a license link, and indication of changes. Other rights may
+remain outside the license. This notice applies to this recording only.

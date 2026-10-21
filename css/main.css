@@ -250,3 +250,5 @@ body.font-home{font-family:HomeSerif,serif}
 .collection-detail svg{display:block;width:100%;height:auto}.collection-preview .modal-body{padding-top:0}.page-enter>.collection-count,.page-enter>.collection-viewer,.page-enter>.collection-cue{animation:uiArrive .4s .15s ease-out both}
 
 @font-face{font-family:SourceHanSerif;src:url('../assets/v21/reading-extra.woff2?v=20261021-collection1') format('woff2');font-weight:200 900;font-display:swap;unicode-range:U+518C,U+58C1,U+5C01,U+65E9,U+90A3,U+95FB}
+
+@font-face{font-family:SourceHanSerif;src:url('../assets/v24/reading-extra.woff2?v=20261021-audio1') format('woff2');font-weight:200 900;font-display:swap;unicode-range:U+7F72}
