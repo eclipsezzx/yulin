@@ -45,8 +45,7 @@ Object.assign(YL.cards,{
 });
 // Revised siblings keep the original art files available for comparison.
 const detailImage=YL.art.image.bind(YL.art);YL.art.image=function(parent,key,box,attrs={}){if(['wall','cave'].includes(key))return this.svg('image',{href:`assets/v7/${key}.webp?v=20261018-web3`,x:box.x,y:box.y,width:box.w,height:box.h,preserveAspectRatio:'none',...attrs},parent);return detailImage(parent,key,box,attrs);};
-YL.heritage.places[2].after='偏白的残墙仍立在沙地边。城墙的断口与突出的墩台，留下了统万城曾经的尺度。';
-YL.heritage.places[3].hint='沿层层檐线起落剪，留出渐收的塔身';
+YL.heritage.places.find(p=>p.key==='pagoda').hint='沿层层檐线起落剪，留出渐收的塔身';
 // Keep the directory title on the page paper; remove the extra current-chapter line.
 const detailMap=YL.game.map.bind(YL.game);YL.game.map=async function(){await detailMap();const p=YL.$('.map-heading>p:last-child');if(p&&!p.classList.contains('chapter-label'))p.remove();const title=YL.$('[data-chapter="1"] strong');if(title)title.textContent='山河往事';};
 YL.heritage.chapter.name='山河往事';

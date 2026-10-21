@@ -1,5 +1,5 @@
 'use strict';
-YL.flow={version:'20261019-result2'};
+YL.flow={version:'20261021-collection1'};
 YL.scroll.version=YL.flow.version;
 // Chapters four and five share the same paper-page entrance as the earlier chapters.
 const flowStart=YL.game.start.bind(YL.game);

@@ -13,7 +13,7 @@ C.library=[
  {key:'suona-player',name:'唢呐乐手',theme:'民俗声音',w:84,h:120,at:[916,363]},
  {key:'waist-drum',name:'腰鼓',theme:'民俗声音',w:70,h:35,at:[524,451]},
  {key:'suona',name:'唢呐',theme:'民俗声音',w:105,h:67,at:[850,316]},
- ...['yangyu','jianbing','sanxian','guoxian'].map((key,i)=>{const a=YL.servingArt['served-'+key],w=i===2?101:115,h=w*a.height/a.width;return{key:'food-'+key,name:YL.food.dishes[i].name,theme:'陕北四味',w,h,at:[[675,455-h/2],[835,477-h/2],[590,495-h/2],[760,516-h/2]][i]};})
+ ...['yangyu','jianbing','sanxian','guoxian'].map((key,i)=>{const a=YL.servingArt['served-'+key],w=i===2?101:115,h=w*a.height/a.width;return{key:'food-'+key,name:({'yangyu':'洋芋擦擦','jianbing':'子长煎饼','sanxian':'榆林拼三鲜','guoxian':'子洲馃馅'})[key],theme:'陕北四味',w,h,at:[[675,455-h/2],[835,477-h/2],[590,495-h/2],[760,516-h/2]][i]};})
 ];
 C.owned=function(a){const d=YL.store.data;if(a.key==='drummer')return d.done.includes(3);if(a.key==='suona-player')return d.done.includes(4);if(a.key==='fold-flower')return !!d.foldFlower?.complete;if(a.key==='free-flower')return !!d.freeFlower?.cuts?.length;if(a.key==='waist-drum')return !!d.handCuts?.['waist-drum']||!!d.waistDrum?.placed;return !!d.handCuts?.[a.key]||!!d.foodTable?.items?.some(p=>p.key===a.key&&p.placed);};
 C.load=function(){const draft=YL.store.data.shanbeiScrollManual;this.items=this.cleanItems(draft?.items);this.title=typeof draft?.title==='string'?draft.title.slice(0,20):'我的陕北画卷';this.serial=Math.max(0,...this.items.map(p=>p.id));this.history=[];this.selected=null;this.blob=null;this.revoke();YL.scroll.zoom=1;YL.scroll.view={x:0,y:0,w:this.W,h:this.H};};

@@ -672,13 +672,12 @@ Object.assign(YL.contours,{"tongwan":[[0.63333,0.97778],[0.45333,0.98519],[0.446
 // Only the cover, shared presentation, prologue transitions and chapter one are revised.
 YL.heritage={
  version:'20261015-heritage1',active:false,
- chapter:{id:1,no:'第一章',name:'剪出陕北',gain:'长城·高台·白城·宝塔·窑洞',motif:'tower'},
+ chapter:{id:1,no:'第一章',name:'剪出陕北',gain:'长城·高台·宝塔·窑洞',motif:'tower'},
  places:[
-  {key:'wall',name:'陕北长城',place:'陕北 · 跨县分布',box:{x:32,y:367,w:311,h:103},card:'h-wall',tag:'随山势起伏的城墙',before:'山梁连着山梁，城墙沿着高处走。在陕北，长城跨过不同县域。剪刀也随山势转折，把墙线的起落留在纸上。',after:'墙线一段高，一段低，顺着山脊向远处伸去。长城的轮廓里，藏着这片土地的起伏。',hint:'从红点起剪，沿垛口与墙线绕回起点'},
-  {key:'tower',name:'镇北台',place:'榆林市 · 榆阳区',box:{x:70,y:329,w:235,h:193},card:'h-tower',tag:'高台与边地往来',before:'榆阳区的红山上，镇北台层层收拢，望向远处的长城。沿着台身转折落剪，宽厚的基座托起上面的高台。',after:'四层台身越往上越小，高台曾用于瞭望与防守。附近的款贡城、易马城，还留下了边地接待、商洽与互市的往事。',hint:'沿四层台体剪出收分，转角处慢一点'},
-  {key:'tongwan',name:'统万城遗址',place:'榆林市 · 靖边县',box:{x:35,y:364,w:305,h:138},card:'h-tongwan',tag:'靖边的白城子',before:'靖边县，白城子。统万城曾是大夏都城，如今城垣与墩台仍留在无定河北岸。剪刀绕过高低不齐的残墙，留住它今天的模样。',after:'墙的边缘已经残损，偏白的夯土却仍醒目。这次不把缺口补齐：遗址留下的痕迹，正是认识它的线索。',hint:'跟随残墙起伏剪，保留不规则的墙影'},
-  {key:'pagoda',name:'延安宝塔',place:'延安市 · 宝塔区',box:{x:129,y:311,w:117,h:224},card:'h-pagoda',tag:'古塔与延安的记忆',before:'宝塔区的宝塔山上，九层砖塔向天空收拢。沿着一层层檐线往上剪，塔身渐渐挺立，和刚才宽厚的镇北台有了不同的身影。',after:'延安宝塔是八角九层的砖塔。古塔历经修葺，也成为革命圣地延安的标志；同一个轮廓，承载着不同时代的记忆。',hint:'沿九层檐线起落剪，留出渐收的塔身'},
-  {key:'cave',name:'陕北窑洞',place:'陕北 · 多县沿用的传统民居',box:{x:36,y:350,w:303,h:166},card:'h-cave',tag:'黄土里的人家',before:'从古城高台走回山坡，人家就在黄土之间。陕北多地的窑洞依势而建，有的靠崖开挖，有的以砖石箍起拱顶。先剪出院前这一片山形。',after:'拱口留住门窗，厚土围合居室。窑洞冬暖夏凉，是人们顺着地形、就着材料安顿生活的办法。黄土高原的故事，也在这些日常里。',hint:'沿黄土坡与院落轮廓剪出窑洞'}
+  {key:'wall',name:'陕北长城',place:'陕北 · 跨县分布',box:{x:32,y:367,w:311,h:103},card:'h-wall',tag:'随山势起伏的城墙',before:'山梁连着山梁，长城随高处伸展。沿垛口与墙线落剪，留下起伏的轮廓。',after:'陕北长城分布于多个县区，许多墙段就地取土、层层夯筑，与楼台关堡相互配合。',hint:'从红点起剪，沿垛口与墙线绕回起点'},
+  {key:'tower',name:'镇北台',place:'榆林市 · 榆阳区',box:{x:70,y:329,w:235,h:193},card:'h-tower',tag:'高台与边地往来',before:'榆阳区红山上，镇北台四层收拢。沿台身转角落剪，留下宽基座与高台。',after:'镇北台曾用于瞭望与防守；附近的款贡城、易马城，见证着边地的商洽与互市。',hint:'沿四层台体剪出收分，转角处慢一点'},
+  {key:'pagoda',name:'延安宝塔',place:'延安市 · 宝塔区',box:{x:129,y:311,w:117,h:224},card:'h-pagoda',tag:'古塔与延安的记忆',before:'宝塔区的宝塔山上，九层砖塔向上收拢。沿一层层檐线起剪，让塔身挺立。',after:'延安宝塔八角九层，既留着古城的历史，也成为革命圣地延安的标志。',hint:'沿九层檐线起落剪，留出渐收的塔身'},
+  {key:'cave',name:'陕北窑洞',place:'陕北 · 多县沿用的传统民居',box:{x:36,y:350,w:303,h:166},card:'h-cave',tag:'黄土里的人家',before:'窑洞依坡而建。沿土崖与院墙，剪出山里的人家。',after:'靠崖开挖，或以砖石箍起拱顶。厚实的窑壁有助于调节室温，安顿黄土坡上的日常。',hint:'沿黄土坡与院落轮廓剪出窑洞'}
  ],
  links(items){return '<p class="source-links">'+items.map(([name,url])=>`<a href="${url}" target="_blank" rel="noopener">${name}</a>`).join('')+'</p>';},
  shell(){
@@ -710,7 +709,7 @@ YL.heritage={
  },
  // The doorway is genuinely removed from the cut image. The accepted hand trace is the mask edge.
  async arch(p,scope){
-  await this.text('再剪开中间的窑门。直边向上，弧线合拢；一道拱口，把山坡里的居室显了出来。',scope);
+  await this.text('再沿拱口剪开窑门，让光透进山坡里的人家。',scope);
   const A=YL.art,svg=YL.game.svg,g=YL.$('[data-object="cave"]'),b=p.box,cut=YL.game.cuts.cave;
   const box={x:b.x+b.w*.50,y:b.y+b.h*.43,w:b.w*.095,h:b.h*.405},d=`M${box.x} ${box.y+box.h}V${box.y+box.w/2}a${box.w/2} ${box.w/2} 0 0 1 ${box.w} 0V${box.y+box.h}Z`;
   const gate=A.svg('g',{'data-heritage':'arch'},svg),cover=A.svg('path',{d,fill:'url(#redPaper)'},gate),guide=A.svg('path',{d,class:'cut-guide',fill:'none'},gate),l=guide.getTotalLength(),baseRefs=Array.from({length:161},(_,i)=>guide.getPointAtLength(l*i/160));let refs=baseRefs,direction=0;gate.dataset.cutDirection="pending";const start=refs[0],dot=A.svg('circle',{cx:start.x,cy:start.y,r:5,class:'start-dot'},gate),seam=A.svg('path',{fill:'none',stroke:'#F4EBDD','stroke-width':1.6},gate),scissors=YL.prologue.cursor(gate,start.x,start.y);let idx=0,trace=[],tip=start,down=false,id=null,finished=false,bad=0;
@@ -765,31 +764,30 @@ YL.route={
  version:'20261015-detail1',
  stops:[
   {name:'榆阳 · 红山',full:'榆林市 · 榆阳区 · 红山',lat:38.33629,lon:109.72666,osm:'457713690'},
-  {name:'靖边 · 统万城',full:'榆林市 · 靖边县 · 白城子',lat:38.00047,lon:108.85151,osm:'470729772'},
   {name:'宝塔区 · 宝塔山',full:'延安市 · 宝塔区 · 宝塔山',lat:36.59335,lon:109.48894,osm:'1415823100'},
   {name:'延川 · 梁家河',full:'延安市 · 延川县 · 梁家河村',lat:36.81537,lon:110.06143,osm:'739694823'}
  ],
  // The same scale is used for both axes after longitude is corrected at 37.5°N.
  project(p){return{x:187.5+(p.lon-109.45)*Math.cos(37.5*Math.PI/180)*116,y:320+(38.33629-p.lat)*116};},
- materials:{wall:{scene:'frontier-scene',station:0,target:{x:19,y:360,w:295,h:91},home:{x:26,y:463,w:240,h:74}},tower:{scene:'frontier-scene',station:0,target:{x:241,y:315,w:110,h:91},home:{x:34,y:443,w:108,h:89}},tongwan:{scene:'tongwan-scene',station:1,target:{x:43,y:329,w:288,h:130},home:{x:33,y:455,w:180,h:81}},pagoda:{scene:'pagoda-scene',station:2,target:{x:146,y:284,w:82,h:156},home:{x:37,y:419,w:59,h:113}},cave:{scene:'cave-scene',station:3,target:{x:59,y:317,w:263,h:144},home:{x:29,y:451,w:157,h:86}}},
+ materials:{wall:{scene:'frontier-scene',station:0,target:{x:19,y:360,w:295,h:91},home:{x:26,y:463,w:240,h:74}},tower:{scene:'frontier-scene',station:0,target:{x:241,y:315,w:110,h:91},home:{x:34,y:443,w:108,h:89}},pagoda:{scene:'pagoda-scene',station:1,target:{x:146,y:284,w:82,h:156},home:{x:37,y:419,w:59,h:113}},cave:{scene:'cave-scene',station:2,target:{x:59,y:317,w:263,h:144},home:{x:29,y:451,w:157,h:86}}},
  mode(mode){YL.$('#game-screen').dataset.mode=mode;},
  background(key){const image=YL.$('#fold-scene');image.classList.remove('window-arrive');image.className='scene-art scene-'+key;image.src='assets/v6/'+key+'.webp?v=20261018-web3';image.alt=key==='route-paper'?'陕北地域路线的纸艺底图':'为建筑剪纸留出位置的陕北纸艺风景';},
  async clear(){YL.game.svg.querySelectorAll('[data-object],[data-task],[data-heritage],[data-route],[data-landmark-set],[data-site-details]').forEach(n=>n.remove());YL.game.showTags([]);YL.game.setHint('');YL.$('#progress-track').hidden=true;YL.$('#stage-next').hidden=true;YL.game.skipper=null;},
  drawMap(current=0){
-  const A=YL.art,g=A.svg('g',{'data-route':'map','aria-label':'北向上的陕北四站位置示意'},YL.game.svg),pts=this.stops.map(p=>this.project(p));
+  const A=YL.art,g=A.svg('g',{'data-route':'map','aria-label':'北向上的陕北三站位置示意'},YL.game.svg),pts=this.stops.map(p=>this.project(p));
   const d=YL.v3.path(pts,false);A.svg('path',{d,fill:'none',stroke:'#F4EBDD','stroke-width':6},g);A.svg('path',{d,fill:'none',stroke:'#82715C','stroke-width':1.2,'stroke-dasharray':'3 5'},g);
   const done=A.svg('path',{d:YL.v3.path(pts.slice(0,current+1),false),fill:'none',stroke:'#D83A25','stroke-width':2.2,'data-route-travelled':'true'},g);
-  const labels=[{dx:12,dy:-8,w:92},{dx:-101,dy:-4,w:96},{dx:-111,dy:12,w:107},{dx:13,dy:-4,w:103}];
+  const labels=[{dx:12,dy:-8,w:92},{dx:-111,dy:12,w:107},{dx:13,dy:-4,w:103}];
   pts.forEach((p,i)=>{A.svg('circle',{cx:p.x,cy:p.y,r:5,fill:'#F4EBDD',stroke:i<=current?'#D83A25':'#82715C','stroke-width':1.4,'data-route-stop':i},g);const l=labels[i],x=p.x+l.dx,y=p.y+l.dy;A.svg('rect',{x:x-3,y:y-12,width:l.w,height:21,rx:1,fill:'#F4EBDD'},g);const t=A.svg('text',{x,y:y+2,'font-size':11,fill:'#24221E'},g);t.textContent=this.stops[i].name;});
   const north=A.svg('g',{transform:'translate(329,326)','aria-label':'北向上'},g);A.svg('path',{d:'M0 20V-6M-4 1L0-7 4 1',fill:'none',stroke:'#24221E','stroke-width':1.2},north);const n=A.svg('text',{x:0,y:-14,'text-anchor':'middle','font-size':11,fill:'#24221E'},north);n.textContent='北';
   const marker=A.svg('g',{'data-route-traveller':'true',transform:`translate(${pts[current].x},${pts[current].y})`},g);A.svg('path',{d:'M0 -8L6 0 0 8-6 0Z',fill:'#D83A25',stroke:'#F4EBDD','stroke-width':1.2},marker);
   return{g,pts,marker,done};
  },
- async overview(scope){await this.clear();this.mode('route');this.background('route-paper');YL.$('#heritage-place').textContent='榆阳 → 靖边 → 宝塔区 → 延川';YL.$('#fold-footer').textContent='四站 · 五幅建筑剪纸';await YL.heritage.text('从榆阳的长城与高台出发，去靖边看一座古城的遗迹，再到延安与延川，看塔影和窑洞。地点散在山河之间，我们沿着纸上的连线，一处处走近。',scope);this.drawMap(0);YL.game.setHint('北向上 · 依真实地点位置排列');YL.game.showTags([],scope);await YL.v3.continue(scope,'到红山起剪 ›');},
+ async overview(scope){await this.clear();this.mode('route');this.background('route-paper');YL.$('#heritage-place').textContent='榆阳 → 宝塔区 → 延川';YL.$('#fold-footer').textContent='三站 · 四幅建筑剪纸';await YL.heritage.text('从榆阳红山出发，向南看延安宝塔，再向东北走进延川窑院。',scope);this.drawMap(0);YL.game.setHint('北向上 · 依真实地点位置排列');YL.game.showTags([],scope);await YL.v3.continue(scope,'到红山起剪 ›');},
  async travel(from,to,scope){
-  await this.clear();this.mode('route');this.background('route-paper');YL.$('#heritage-place').textContent=this.stops[from].name+' → '+this.stops[to].name;YL.$('#fold-footer').textContent=`沿图前往 · 第 ${to+1} / 4 站`;
-  const lines=['','离开榆阳红山，向西南去靖边。白城子的残墙，还立在无定河北岸。下一张红纸，剪出统万城今天留下的轮廓。','从靖边转向东南，来到延安。宝塔山上的古塔，收起宽厚的台身，换成一层层向上的砖塔檐线。','从宝塔山再向东北，去延川县梁家河村。塔影退到身后，窑门与院落渐渐近了。接下来，让剪口走进山里的人家。'];
-  await YL.heritage.text(lines[to],scope);const {pts,marker,done}=this.drawMap(from),a=pts[from],b=pts[to];YL.game.setHint(['','向西南 · 靖边县','向东南 · 宝塔区','向东北 · 延川县'][to]);
+  await this.clear();this.mode('route');this.background('route-paper');YL.$('#heritage-place').textContent=this.stops[from].name+' → '+this.stops[to].name;YL.$('#fold-footer').textContent=`沿图前往 · 第 ${to+1} / ${this.stops.length} 站`;
+  const lines=['','离开榆阳红山，向南来到延安宝塔山。高台远去，九层塔影立在山头。','从宝塔山向东北，走进延川县梁家河村。窑门开在坡前，院落收着日常。'];
+  await YL.heritage.text(lines[to],scope);const {pts,marker,done}=this.drawMap(from),a=pts[from],b=pts[to];YL.game.setHint(['','向南 · 宝塔区','向东北 · 延川县'][to]);
   await scope.promise(resolve=>{let elapsed=0,finished=false;const duration=YL.motion.ms(1900),paint=k=>{marker.setAttribute('transform',`translate(${a.x+(b.x-a.x)*k},${a.y+(b.y-a.y)*k})`);done.setAttribute('d',YL.v3.path([...pts.slice(0,from+1),{x:a.x+(b.x-a.x)*k,y:a.y+(b.y-a.y)*k}],false));};const finish=()=>{if(finished||YL.game.paused)return;finished=true;scope.pending.delete(tick);paint(1);YL.game.skipper=null;resolve();};const tick=dt=>{elapsed+=dt;const k=Math.min(1,elapsed/duration);paint(k);if(k===1)finish();};scope.pending.add(tick);scope.cleanup(()=>scope.pending.delete(tick));YL.game.skipper=finish;});
   YL.$(`[data-route-stop="${to}"]`)?.setAttribute('stroke','#D83A25');await scope.wait(YL.motion.ms(650));
  },
@@ -797,7 +795,7 @@ YL.route={
  placed(parent,key,box){const r=YL.art.result(parent,key,box,YL.game.cuts[key]);this.maskHole(r,key);return r;},
  async place(p,scope){
   const A=YL.art,svg=YL.game.svg,m=this.materials[p.key],home=m.home,target=m.target;this.mode('place');this.background(m.scene);svg.querySelectorAll('[data-object],[data-task],[data-heritage],[data-landmark-set]').forEach(n=>n.remove());
-  await YL.heritage.text(p.key==='wall'?'把这段长城放回山梁。墙线随着山势起伏，剪出的轮廓，也在这里找到了远近。':p.key==='tower'?'把镇北台放回红山上的空位。高台与长城相接，刚才剪过的四层台身，便有了它站立的地方。':p.key==='tongwan'?'把白城子的残墙放回沙地边。保留断口，让这座古城以遗址的模样，留在眼前的山河里。':p.key==='pagoda'?'把延安宝塔放回山顶。层层收拢的塔身立起来，山梁间便有了一眼能认出的身影。':'把剪好的窑洞放回院落。我们在梁家河这一站，看陕北人怎样依着山坡安家。',scope);
+  await YL.heritage.text(p.key==='wall'?'把长城放回山梁，让墙线顺着山势伸展。':p.key==='tower'?'把镇北台放回红山，与长城相望。':p.key==='pagoda'?'把延安宝塔放回山顶，让塔影立起来。':'把窑洞放回梁家河的院落。',scope);
   const g=A.svg('g',{'data-task':'place','data-place-key':p.key},svg),land=A.svg('g',{'data-landmark-set':'true'},g);if(p.key==='tower'&&YL.game.cuts.wall)this.placed(land,'wall',this.materials.wall.target);
   const slot=A.svg('g',{'data-placement':p.key,'pointer-events':'none'},g);A.svg('path',{d:A.path(p.key,target),fill:'#F4EBDD',opacity:.72,stroke:'#24221E','stroke-width':1.2,'stroke-dasharray':'4 4'},slot);
   const tray=A.svg('g',{'pointer-events':'none'},g);A.svg('path',{d:'M19 462L118 460 214 462 355 461V543L243 541 123 544 19 542Z',fill:'#F4EBDD',stroke:'#BC8D4D','stroke-width':.5},tray);
@@ -811,14 +809,14 @@ YL.route={
    scope.event(svg,'pointercancel',()=>{drag=null;if(!finished){pos={x:home.x,y:home.y};apply();}});scope.event(item,'keydown',e=>{if(['Enter',' '].includes(e.key)){e.preventDefault();finish();}});YL.game.skipper=finish;
   });
  },
- summary(){this.mode('route');this.background('route-paper');const {marker}=this.drawMap(3);marker.remove();}
+ summary(){this.mode('route');this.background('route-paper');const {marker}=this.drawMap(this.stops.length-1);marker.remove();}
 };
 const routeShell=YL.heritage.shell.bind(YL.heritage);YL.heritage.shell=function(){routeShell();const img=YL.$('#fold-scene'),wrap=document.createElement('div');wrap.className='site-world-background';img.before(wrap);wrap.append(img);YL.$('#game-screen').classList.add('route-revision');};
 YL.heritage.version=YL.route.version;YL.heritage.clear=YL.route.clear.bind(YL.route);
-YL.heritage.places[0].name='长城 · 榆阳段';YL.heritage.places[0].place='榆林市 · 榆阳区 · 红山一带';YL.heritage.places[0].before='这一站，从榆阳区红山一带的长城看起。城墙顺着山梁起伏，向远处延伸。沿垛口转折落剪，留住墙线与山势相接的轮廓。';
-YL.heritage.places[4].name='梁家河 · 窑洞';YL.heritage.places[4].place='延安市 · 延川县 · 梁家河村';YL.heritage.places[4].before='延川县文安驿镇，梁家河村。窑洞沿山坡安下院落，既留着知青生活的记忆，也继续容纳今天的日常。先剪出院前这一片山形。';
+YL.heritage.places[0].name='长城 · 榆阳段';YL.heritage.places[0].place='榆林市 · 榆阳区 · 红山一带';YL.heritage.places[0].before='榆阳红山一带，长城顺着山梁起伏。沿垛口与墙线转折，剪出山势的高低。';
+const routeCave=YL.heritage.places.find(p=>p.key==='cave');routeCave.name='梁家河 · 窑洞';routeCave.place='延安市 · 延川县 · 梁家河村';routeCave.before='延川县梁家河村，窑洞依坡安下院落。先沿土崖与院墙，剪出山里的人家。';
 YL.cards['h-cave'].body='这里以延川县文安驿镇梁家河村为例，认识陕北多地的窑洞文化。村里的窑洞院落保留着知青生活的记忆，也有继续使用的居住、生产空间。深厚黄土与当地砂石，孕育了靠崖开挖、砖石箍建等不同营造方式；冬暖夏凉的窑洞，是适应地形与材料的居住智慧。插画取普通窑洞形态，不作某孔旧居复原。';YL.cards['h-cave'].more=YL.heritage.links([['陕西省政府 · 梁家河村','https://www.shaanxi.gov.cn/xw/sxyw/202404/t20240410_2325627.html'],['文旅部 · 延川县梁家河','https://zhuanti.mct.gov.cn/dhxlsfn2022shanxi2/detail/2499.html'],['中国非遗网 · 窑洞营造','https://www.ihchina.cn/project_details/14688/']]);
-YL.cards['h-route']={title:'陕北四站 · 路线示意',body:'图中北向上，四站使用同一套地点坐标与统一比例排布。榆阳红山到靖边统万城，向西南；统万城到延安宝塔，转向东南；宝塔山到延川县梁家河村，再向东北。连线表示本作的文化阅读顺序。',more:YL.heritage.links([['地点数据 © OpenStreetMap','https://www.openstreetmap.org/copyright'],...YL.route.stops.map(p=>[p.name+' · 地点核查','https://www.openstreetmap.org/way/'+p.osm])])};
+YL.cards['h-route']={title:'陕北三站 · 路线示意',body:'图中北向上，三站使用同一套地点坐标与统一比例排布。榆阳红山到延安宝塔，向南；宝塔山到延川县梁家河村，再向东北。连线表示本作的文化阅读顺序。',more:YL.heritage.links([['地点数据 © OpenStreetMap','https://www.openstreetmap.org/copyright'],...YL.route.stops.map(p=>[p.name+' · 地点核查','https://www.openstreetmap.org/way/'+p.osm])])};
 YL.heritage.start=async function(){
  if(!YL.store.data.done.includes(0)){YL.ui.toast('先完成序章，再走进陕北');return;}
  YL.game.leave();this.active=true;const run=YL.game.runId;YL.game.chapter=this.chapter;YL.game.cuts={};YL.game.visual={};YL.store.data.chapter=1;YL.store.save();this.shell();
@@ -826,13 +824,13 @@ YL.heritage.start=async function(){
   for(let i=0;i<this.places.length;i++){if(run!==YL.game.runId)return;const p=this.places[i],m=YL.route.materials[p.key];if(m.station!==station){await YL.route.travel(station,m.station,scope);station=m.station;}
    await this.clear();YL.game.step=i+1;YL.route.mode('cut');YL.route.background(m.scene);this.label(p,i);await this.text(p.before,scope);
    await YL.interact.cut({object:p.key,cutBox:p.box,resultBox:p.box,sheetBox:{x:22,y:308,w:331,h:233},hint:p.hint,reducedMotion:YL.motion.reduced()},scope);
-   if(p.key==='cave')await this.arch(p,scope);await YL.route.place(p,scope);YL.route.mode('story');await this.text(p.after,scope);YL.game.showTags([[p.tag,p.card]],scope);YL.details.attach(p.key,scope);YL.game.setHint('轻触画面中的标记，看看建筑与生活的细节');await YL.v3.continue(scope,i===4?'完成第一章 ›':i===0?'同一站 · 再剪镇北台 ›':'沿地图去下一站 ›');
+   if(p.key==='cave')await this.arch(p,scope);await YL.route.place(p,scope);YL.route.mode('story');await this.text(p.after,scope);YL.game.showTags([[p.tag,p.card]],scope);YL.details.attach(p.key,scope);YL.game.setHint('轻触画面中的标记，看看建筑与生活的细节');await YL.v3.continue(scope,i===this.places.length-1?'完成第一章 ›':i===0?'同一站 · 再剪镇北台 ›':'沿地图去下一站 ›');
   }
   if(run!==YL.game.runId)return;scope.dispose();YL.game.scope=null;YL.game.skipper=null;YL.store.finish(this.chapter);YL.store.data.heritageRevision=this.version;YL.store.save();this.end();
  }catch(e){if(e.name==='AbortError'||run!==YL.game.runId)return;console.error(e);YL.ui.modal({title:'重新展开这一章',body:'<p>这一段还没有完成，可以从第一站重新开始。</p>',buttons:[{label:'重玩第一章',action:()=>YL.game.start(1)},{label:'返回目录',secondary:true,action:()=>YL.game.map()}]});}
 };
 // Cover typography returns to the released fold2 layout; moving river/cloud art remains behind it.
-YL.v3.help=function(){YL.ui.modal({kicker:'纸上陕北',title:'剪出建筑，放回山河',body:'<p>序章折剪窗花。第一章从榆阳红山的长城与镇北台出发，经靖边统万城、延安宝塔山，到延川县梁家河村。</p><p>每处先剪出轮廓，再把纸片放进对应背景。地点间连线按真实相对位置绘制，北向上。知识阅读可选，正文下方保留来源链接。</p><p>本次修改到第一章结束。右上角可辅助完成当前操作；暂停和进度保存在本机。</p>',buttons:[{label:'继续体验'}]});};
+YL.v3.help=function(){YL.ui.modal({kicker:'纸上陕北',title:'剪出建筑，放回山河',body:'<p>序章折剪窗花。第一章从榆阳红山的长城与镇北台出发，经延安宝塔山，到延川县梁家河村。</p><p>每处先剪出轮廓，再把纸片放进对应背景。地点间连线按真实相对位置绘制，北向上。知识阅读可选，正文下方保留来源链接。</p><p>右上角可辅助完成当前操作；暂停和进度保存在本机。</p>',buttons:[{label:'继续体验'}]});};
 
 
 'use strict';
@@ -882,8 +880,7 @@ Object.assign(YL.cards,{
 });
 // Revised siblings keep the original art files available for comparison.
 const detailImage=YL.art.image.bind(YL.art);YL.art.image=function(parent,key,box,attrs={}){if(['wall','cave'].includes(key))return this.svg('image',{href:`assets/v7/${key}.webp?v=20261018-web3`,x:box.x,y:box.y,width:box.w,height:box.h,preserveAspectRatio:'none',...attrs},parent);return detailImage(parent,key,box,attrs);};
-YL.heritage.places[2].after='偏白的残墙仍立在沙地边。城墙的断口与突出的墩台，留下了统万城曾经的尺度。';
-YL.heritage.places[3].hint='沿层层檐线起落剪，留出渐收的塔身';
+YL.heritage.places.find(p=>p.key==='pagoda').hint='沿层层檐线起落剪，留出渐收的塔身';
 // Keep the directory title on the page paper; remove the extra current-chapter line.
 const detailMap=YL.game.map.bind(YL.game);YL.game.map=async function(){await detailMap();const p=YL.$('.map-heading>p:last-child');if(p&&!p.classList.contains('chapter-label'))p.remove();const title=YL.$('[data-chapter="1"] strong');if(title)title.textContent='山河往事';};
 YL.heritage.chapter.name='山河往事';
@@ -1176,8 +1173,8 @@ const foodShell=YL.folk.shell.bind(YL.folk);YL.folk.shell=function(ch){foodShell
 YL.folk.chapter2=scope=>YL.food.run(scope);
 const foodEnd=YL.folk.end.bind(YL.folk);YL.folk.end=function(index){return index===2?YL.food.end():foodEnd(index);};
 const foodImage=YL.art.image.bind(YL.art);YL.art.image=function(parent,key,box,attrs={}){if(!YL.foodArt[key])return foodImage(parent,key,box,attrs);const id='food-art-'+(++YL.folk.serial),defs=this.svg('defs',{},parent),clip=this.svg('clipPath',{id,clipPathUnits:'userSpaceOnUse'},defs);this.svg('path',{d:this.path(key,box)},clip);return this.svg('image',{href:`assets/v9/${key}.webp?v=20261018-web3`,x:box.x,y:box.y,width:box.w,height:box.h,preserveAspectRatio:'none','clip-path':`url(#${id})`,...attrs},parent);};
-const foodMap=YL.game.map.bind(YL.game);YL.game.map=async function(){await foodMap();const row=YL.$('[data-chapter="2"]');if(!row)return;row.querySelector('img').src=YL.food.asset?YL.food.asset('food-guoxian'):'assets/v9/food-guoxian.webp?v=20261018-web3';row.querySelector('img').alt=YL.food.chapter.gain;row.querySelector('strong').textContent=YL.food.chapter.name;row.querySelector('small').textContent='第二章 · 陕北四味与地方食俗';if(YL.store.data.done.includes(2))row.querySelector('em').textContent=YL.store.data.folkRevisions?.[2]===YL.food.version?'已完成':'可重剪';};
-YL.heritage.end=function(){YL.ui.modal({kicker:'第一章完成',title:'山河与人家',body:'<p>长城、镇北台、统万城遗址、延安宝塔和窑洞，已经留在这一章里。</p><p>接下来推开窑门，走进灶间，认识陕北桌上的四种滋味。</p>',close:false,buttons:[{label:'进入第二章',action:()=>YL.game.start(2)},{label:'返回章节目录',secondary:true,action:()=>YL.game.map()},{label:'重剪第一章',secondary:true,action:()=>YL.game.start(1)}]});};
+const foodMap=YL.game.map.bind(YL.game);YL.game.map=async function(){await foodMap();const row=YL.$('[data-chapter="2"]');if(!row)return;row.querySelector('img').src=YL.food.asset?YL.food.asset('food-jianbing'):'assets/v9/food-jianbing.webp?v=20261018-web3';row.querySelector('img').alt=YL.food.chapter.gain;row.querySelector('strong').textContent=YL.food.chapter.name;row.querySelector('small').textContent='第二章 · 家常与街巷里的两种滋味';if(YL.store.data.done.includes(2))row.querySelector('em').textContent=YL.store.data.folkRevisions?.[2]===YL.food.version?'已完成':'可重剪';};
+YL.heritage.end=function(){YL.ui.modal({kicker:'第一章完成',title:'山河与人家',body:'<p>长城、镇北台、延安宝塔和窑洞，已经留在这一章里。</p><p>接下来走进灶间，认识洋芋擦擦与子长煎饼。</p>',close:false,buttons:[{label:'进入第二章',action:()=>YL.game.start(2)},{label:'返回章节目录',secondary:true,action:()=>YL.game.map()},{label:'重剪第一章',secondary:true,action:()=>YL.game.start(1)}]});};
 YL.v3.help=function(){YL.ui.modal({kicker:'纸上陕北',title:'从剪口走进地方生活',body:'<p>序章折剪团花，也可自由设计。第一章沿地图走近陕北遗迹与民居。第二章“灶火人家”依次剪出四种传统美食，认识地方背景、食材手艺与风味。第三章剪出鼓手，跟随真实安塞腰鼓表演录音体验节拍。</p><p>可以松手续剪，也可使用辅助。文化正文下方保留资料链接。音游支持暂停、键盘 F/J 或左右方向键、直接观看及辅助完成。</p><p>进度与作品保存在本机。本次制作到第三章结束，仅供本机预览。</p>',buttons:[{label:'继续体验'}]});};
 
 
@@ -1191,7 +1188,7 @@ Object.assign(YL.foodArt,YL.tableArt);
 YL.table={version:'20261017-table1'};
 Object.assign(YL.food,{
  version:YL.table.version,
- chapter:{id:2,no:'第二章',name:'陕北人家',subtitle:'剪出四味，摆成一桌',gain:'洋芋擦擦·子长煎饼·拼三鲜·子洲馃馅',motif:'flower'},
+ chapter:{id:2,no:'第二章',name:'陕北人家',subtitle:'家常与街巷里的两种滋味',gain:'洋芋擦擦·子长煎饼',motif:'flower'},
  mode:'intro',placed:[],
  asset(key){return `assets/v10/${YL.tableArt[key].asset}.webp?v=20261018-web3`;},
  box(key){const a=YL.tableArt[key],w=Math.min(295,179*a.width/a.height),h=w*a.height/a.width;return{x:(375-w)/2,y:342+(190-h)/2,w,h};},
@@ -1226,24 +1223,27 @@ Object.assign(YL.food,{
   });
  },
  async run(scope){
-  this.placed=[];this.background();this.tableGroup=YL.art.svg('g',{'data-food-table':'true'},YL.game.svg);this.setMode('intro');await YL.editorial.intro(['窑门一开，热气便迎了出来，木桌上已摆好碗盘。','洋芋、荞麦、肉汤和枣馅，做成家常与待客的滋味，也盛着陕北人的人情。'],scope);this.label('一桌饭食，几样人情','陕北多地 · 子长 · 榆阳 · 子洲');YL.folk.stage(0,'陕北人家');await YL.folk.text('桌上的碗盘已经备好。剪出四样食物，听过它们的故事，再盛到对应的碗盘里。',scope);await YL.v3.continue(scope,'剪第一道美食 ›');
+  this.placed=[];this.background();this.tableGroup=YL.art.svg('g',{'data-food-table':'true'},YL.game.svg);this.setMode('intro');await YL.editorial.intro(['窑门一开，热气便迎了出来，木桌上已摆好碗盘。','土豆蒸出家常饭，荞麦摊成街巷小吃。寻常食材，也有一方水土的滋味。'],scope);this.label('家常与街巷的滋味','陕北多地 · 子长');YL.folk.stage(0,'陕北人家');await YL.folk.text('剪出洋芋擦擦和子长煎饼，听听它们的故事，再盛到桌上的碗盘里。',scope);await YL.v3.continue(scope,'剪第一道美食 ›');
   for(const [i,d]of this.dishes.entries()){
    this.clear();this.setMode('cut');this.label(d.name,d.place);YL.game.step=i*4+1;YL.$('#fold-footer').textContent='纸上陕北 · 第二章';await YL.folk.text(d.before,scope);const b=this.box(d.key);
    await YL.interact.cut({object:d.key,cutBox:b,resultBox:b,sheetBox:{x:79,y:331,w:217,h:151},hint:'从红点沿外缘慢慢剪，松手后可以接着剪',reducedMotion:YL.motion.reduced(),easy:true},scope);
    this.setMode('read');YL.game.step=i*4+2;YL.game.setHint('');await YL.folk.text(d.summary,scope);await YL.v3.continue(scope,'盛入碗盘 ›');
-   YL.game.step=i*4+3;await this.place(d,i,scope);this.setMode(i===3?'final':'table');YL.game.setHint('轻触桌上的美食，可反复查看知识卡');YL.game.step=i*4+4;await YL.folk.text(d.after,scope);await YL.v3.continue(scope,i===3?'完成第二章 ›':'剪下一道美食 ›');
+   YL.game.step=i*4+3;await this.place(d,i,scope);const last=i===this.dishes.length-1;this.setMode(last?'final':'table');YL.game.setHint('轻触桌上的美食，可反复查看知识卡');YL.game.step=i*4+4;await YL.folk.text(d.after,scope);await YL.v3.continue(scope,last?'完成第二章 ›':'剪下一道美食 ›');
   }
   this.save(true);
  },
- end(){YL.ui.modal({kicker:'第二章完成',title:'陕北人家',body:'<p>四种美食已经上桌。家常饭、街巷小吃、宴席大菜与礼俗糕点，留下了陕北生活的不同滋味。</p><p>桌上的热气还没散，院外的腰鼓已经响起来。</p>',close:false,buttons:[{label:'进入第三章',action:()=>YL.game.start(3)},{label:'返回章节目录',secondary:true,action:()=>YL.game.map()}]});}
+ end(){YL.ui.modal({kicker:'第二章完成',title:'陕北人家',body:'<p>洋芋擦擦与子长煎饼已经上桌。家常饭的实在、街巷小吃的鲜活，都在寻常食材里。</p><p>桌上的热气还没散，院外的腰鼓已经响起来。</p>',close:false,buttons:[{label:'进入第三章',action:()=>YL.game.start(3)},{label:'返回章节目录',secondary:true,action:()=>YL.game.map()}]});}
 });
 const tableStories=[
  {before:'先剪洋芋擦擦。粗细不一的洋芋条在外缘探出短短的尖角。沿着起伏走一圈，把这份家常饭从纸上剪下来。',summary:'洋芋就是土豆。擦成条，拌上面粉蒸熟，便成了陕北多地熟悉的洋芋擦擦。浇汁吃，绵软中有酸辣；下锅炒，又添油香。普通食材，也能撑起一餐。',after:'洋芋擦擦上桌了，热气从菜堆里升起来。家常饭先摆一份，再添一道子长街巷里的滋味。',hot:true},
- {before:'接下来是子长煎饼。两卷薄饼斜斜相叠，卷口露出豆腐干。顺着长边和交叠处的缺口剪，留下卷饼舒展的形状。',summary:'子长煎饼以荞麦制浆，在铁鏊上摊烙，薄而柔韧。卷入豆腐干，配醋、蒜汁、韭花和辣油，一口有豆香，也有酸辣。它是街巷小吃，也是招待来客的地方滋味。',after:'薄饼卷着豆腐干，落在了桌上。两样小食齐了，接下来端出老榆林席面上的一道大菜。'},
+ {before:'接下来是子长煎饼。两卷薄饼斜斜相叠，卷口露出豆腐干。顺着长边和交叠处的缺口剪，留下卷饼舒展的形状。',summary:'子长煎饼以荞麦制浆，在铁鏊上摊烙，薄而柔韧。卷入豆腐干，配醋、蒜汁、韭花和辣油，一口有豆香，也有酸辣。它是街巷小吃，也是招待来客的地方滋味。',after:'两样饭食都上桌了。洋芋擦擦留住家常的暖意，子长煎饼带来街巷的酸香。想再细看，轻触美食便能读到它的来历与做法。'},
  {before:'这一道剪榆林拼三鲜的食材。肉片、丸子与卷起的粉皮叠在一起，外缘有高有低。剪好后，把这份丰盛盛进汤碗。',summary:'老榆林待客，拼三鲜是一道郑重的大菜。猪、羊、鸡配上丸子、酥肉、粉皮和蔬菜，几道烹调工夫合进鲜汤。肉香醇厚，粉皮柔滑，一碗里各有滋味。',after:'拼三鲜端稳了，鲜汤的热气慢慢散开。最后，添一份子洲馃馅，把饭桌上的滋味接到人情往来里。',hot:true},
  {before:'最后剪子洲馃馅。整饼与半块相叠，一边圆润，一边露出平整的馅心。沿交叠处转一下剪刀，让两种形状留在一起。',summary:'子洲馃馅有枣泥、豆沙、五仁等馅料。这一份露出的是枣泥：酥皮松脆，馅心甜润。在当地，它也走进订亲与馈赠的习俗，一枚糕点，传递的是亲友间的情意。',after:'子洲馃馅也摆好了。家常、待客与礼俗，聚在同一张桌上。可以轻触每一道美食，细看它的来历、做法与风味。'}
 ];
-YL.food.dishes.forEach((d,i)=>Object.assign(d,tableStories[i]));YL.folk.chapters[2]=YL.food.chapter;Object.assign(YL.chapters[2],YL.food.chapter,{desc:YL.food.chapter.subtitle});
+YL.food.dishes.forEach((d,i)=>Object.assign(d,tableStories[i]));
+// Keep legacy source art and saved cuts, while the active chapter now serves two dishes.
+YL.food.dishes=YL.food.dishes.filter(d=>['food-yangyu','food-jianbing'].includes(d.key));
+YL.folk.chapters[2]=YL.food.chapter;Object.assign(YL.chapters[2],YL.food.chapter,{desc:YL.food.chapter.subtitle});
 const tableImage=YL.art.image.bind(YL.art);YL.art.image=function(parent,key,box,attrs={}){if(!YL.tableArt[key])return tableImage(parent,key,box,attrs);const id='table-art-'+(++YL.folk.serial),defs=this.svg('defs',{},parent),clip=this.svg('clipPath',{id,clipPathUnits:'userSpaceOnUse'},defs);this.svg('path',{d:this.path(key,box)},clip);return this.svg('image',{href:YL.food.asset(key),x:box.x,y:box.y,width:box.w,height:box.h,preserveAspectRatio:'none','clip-path':`url(#${id})`,...attrs},parent);};
 YL.v3.help=function(){YL.ui.modal({kicker:'纸上陕北',title:'从剪口走进地方生活',body:'<p>序章折剪团花，也可自由设计。第一章沿地图走近陕北遗迹与民居。第二章“陕北人家”依次剪出四种美食，听旁白介绍，再拖放到餐桌。桌上的美食可重复点击，知识卡介绍地方背景、食材手艺与风味，来源链接在卡片下方。</p><p>第三章跟随真实安塞腰鼓演出录音体验节拍。可以松手续剪，也可使用辅助。进度保存在本机。本次制作到第三章结束，仅供本机预览。</p>',buttons:[{label:'继续体验'}]});};
 
@@ -1350,7 +1350,7 @@ YL.food.add=function(d,index,cut,scope){
  const g=A.svg('g',{'data-food-hotspot':d.key,'data-served-asset':asset,role:'button',tabindex:0,'aria-label':'了解'+d.name,class:'table-food'},this.tableGroup);A.svg('rect',{x:b.x,y:b.y-6,width:b.w,height:b.h+12,fill:'transparent','data-food-hit':d.key},g);const cx=b.x+b.w*.79,cy=b.y+b.h*.45;A.svg('circle',{cx,cy,r:14,fill:'none',stroke:'#D83A25','stroke-width':1.3,'pointer-events':'none',class:'food-hotspot-halo'},g);A.svg('circle',{cx,cy,r:4,fill:'#D83A25',stroke:'#F4EBDD','stroke-width':1.5,'pointer-events':'none'},g);const t=A.svg('text',{x:YL.serving.plans[index].x,y:index<2?342:521,'text-anchor':'middle',class:'table-food-name','pointer-events':'none'},g);t.textContent=d.name;
  scope.event(g,'click',()=>this.open(d));scope.event(g,'keydown',e=>{if(['Enter',' '].includes(e.key)){e.preventDefault();this.open(d);}});const item={d,index,cut,b,g,serving:asset};this.placed.push(item);if(d.hot)this.steam(item,scope);this.setMode('table');this.save(false);return item;
 };
-YL.food.save=function(complete){YL.store.data.foodTable={version:this.version,complete,items:this.placed.map(({d,index,cut,serving})=>({key:d.key,index,cut:{points:cut.points,assisted:cut.assisted},serving,placed:true}))};YL.store.save();};
+YL.food.save=function(complete){const previous=YL.store.data.foodTable||{},active=new Set(this.dishes.map(d=>d.key)),archived=new Map([...(previous.archivedItems||[]),...(previous.items||[]).filter(item=>!active.has(item.key))].map(item=>[item.key,item]));YL.store.data.foodTable={version:this.version,complete,items:this.placed.map(({d,index,cut,serving})=>({key:d.key,index,cut:{points:cut.points,assisted:cut.assisted},serving,placed:true})),...(archived.size?{archivedItems:[...archived.values()]}:{})};YL.store.save();};
 YL.food.place=async function(d,index,scope){
  this.setMode('placing');const A=YL.art,svg=YL.game.svg,cut=YL.game.cuts[d.key],home=this.box(d.key),target=this.target(d.key,index),empty=YL.serving.box(YL.serving.empty(index),index);svg.querySelector(`[data-object="${d.key}"]`)?.remove();const task=A.svg('g',{'data-task':'food-place'},svg),slot=A.svg('ellipse',{cx:YL.serving.plans[index].x,cy:empty.y+empty.h*.44,rx:empty.w*.42,ry:Math.min(17,empty.h*.22),class:'food-table-target',fill:'none',stroke:'#218A98','stroke-width':1.1,'stroke-dasharray':'3 4','pointer-events':'none'},task),piece=A.svg('g',{'data-food-piece':d.key,role:'button',tabindex:0,'aria-label':'把'+d.name+'拖入空碗盘，或按回车放好'},task);A.result(piece,d.key,{x:0,y:0,w:home.w,h:home.h},cut);A.svg('rect',{x:-4,y:-4,width:home.w+8,height:home.h+8,fill:'transparent'},piece);let pos={x:home.x,y:home.y},drag=null,done=false;const paint=()=>piece.setAttribute('transform',`translate(${pos.x},${pos.y})`),distance=()=>Math.hypot(pos.x+home.w/2-target.x-target.w/2,pos.y+home.h/2-target.y-target.h/2);paint();YL.game.setHint('把食物拖进对应空碗盘，靠近盘心后松手');
  await scope.promise(resolve=>{const finish=async assisted=>{if(done||YL.game.paused)return;done=true;drag=null;YL.game.skipper=null;const from={...pos};try{await scope.animate(YL.motion.ms(320),k=>{const e=1-(1-k)**3;piece.setAttribute('transform',`translate(${from.x+(target.x-from.x)*e},${from.y+(target.y-from.y)*e}) scale(${1+(target.w/home.w-1)*e})`);});task.remove();this.add(d,index,cut,scope);YL.game.visual[d.key+'Placed']=true;YL.store.data.foodPlacements={...(YL.store.data.foodPlacements||{}),[d.key]:{assisted:!!assisted,version:this.version}};YL.store.save();YL.audio.snap();resolve();}catch{}};scope.event(piece,'pointerdown',e=>{if(done||YL.game.paused)return;const q=YL.interact.point(svg,e);drag={id:e.pointerId,x:q.x-pos.x,y:q.y-pos.y};svg.setPointerCapture?.(e.pointerId);e.preventDefault();});scope.event(svg,'pointermove',e=>{if(!drag||done||YL.game.paused||drag.id!==e.pointerId)return;const q=YL.interact.point(svg,e);pos={x:q.x-drag.x,y:q.y-drag.y};paint();slot.classList.toggle('near',distance()<47);e.preventDefault();});scope.event(svg,'pointerup',e=>{if(!drag||done||YL.game.paused||drag.id!==e.pointerId)return;if(svg.hasPointerCapture?.(e.pointerId))svg.releasePointerCapture(e.pointerId);drag=null;if(distance()<47)finish(false);else{pos={x:home.x,y:home.y};paint();slot.classList.remove('near');}});scope.event(svg,'pointercancel',()=>{drag=null;pos={x:home.x,y:home.y};paint();});scope.event(piece,'keydown',e=>{if(['Enter',' '].includes(e.key)){e.preventDefault();finish(false);}});YL.game.skipper=()=>finish(true);});
@@ -1367,10 +1367,10 @@ Object.assign(YL.servingArt,{"shanbei-scroll":{"width":2000,"height":1125,"asset
 
 
 'use strict';
-// The dishes use the same elevated table camera; back row is smaller than front.
+// Both retained dishes share one row and the same elevated table camera.
 YL.serving.version='20261017-perspective1';
 YL.serving.asset=function(key){return `assets/v14/${key}.webp?v=20261018-web3`;};
-YL.serving.plans=[{x:111,base:412,w:112},{x:264,base:412,w:112},{x:102,base:500,w:136},{x:274,base:500,w:136}];
+YL.serving.plans=[{x:111,base:450,w:128},{x:264,base:450,w:128}];
 YL.food.version=YL.serving.version;YL.table.version=YL.food.version;
 
 
@@ -1433,7 +1433,7 @@ C.library=[
  {key:'suona-player',name:'唢呐乐手',theme:'民俗声音',w:84,h:120,at:[916,363]},
  {key:'waist-drum',name:'腰鼓',theme:'民俗声音',w:70,h:35,at:[524,451]},
  {key:'suona',name:'唢呐',theme:'民俗声音',w:105,h:67,at:[850,316]},
- ...['yangyu','jianbing','sanxian','guoxian'].map((key,i)=>{const a=YL.servingArt['served-'+key],w=i===2?101:115,h=w*a.height/a.width;return{key:'food-'+key,name:YL.food.dishes[i].name,theme:'陕北四味',w,h,at:[[675,455-h/2],[835,477-h/2],[590,495-h/2],[760,516-h/2]][i]};})
+ ...['yangyu','jianbing','sanxian','guoxian'].map((key,i)=>{const a=YL.servingArt['served-'+key],w=i===2?101:115,h=w*a.height/a.width;return{key:'food-'+key,name:({'yangyu':'洋芋擦擦','jianbing':'子长煎饼','sanxian':'榆林拼三鲜','guoxian':'子洲馃馅'})[key],theme:'陕北四味',w,h,at:[[675,455-h/2],[835,477-h/2],[590,495-h/2],[760,516-h/2]][i]};})
 ];
 C.owned=function(a){const d=YL.store.data;if(a.key==='drummer')return d.done.includes(3);if(a.key==='suona-player')return d.done.includes(4);if(a.key==='fold-flower')return !!d.foldFlower?.complete;if(a.key==='free-flower')return !!d.freeFlower?.cuts?.length;if(a.key==='waist-drum')return !!d.handCuts?.['waist-drum']||!!d.waistDrum?.placed;return !!d.handCuts?.[a.key]||!!d.foodTable?.items?.some(p=>p.key===a.key&&p.placed);};
 C.load=function(){const draft=YL.store.data.shanbeiScrollManual;this.items=this.cleanItems(draft?.items);this.title=typeof draft?.title==='string'?draft.title.slice(0,20):'我的陕北画卷';this.serial=Math.max(0,...this.items.map(p=>p.id));this.history=[];this.selected=null;this.blob=null;this.revoke();YL.scroll.zoom=1;YL.scroll.view={x:0,y:0,w:this.W,h:this.H};};
@@ -1475,7 +1475,116 @@ YL.v3.help=function(){YL.ui.modal({kicker:'纸上陕北',title:'把故事带回�
 
 
 'use strict';
-YL.flow={version:'20261019-result2'};
+// A collection of the player's saved cuts. The former collage draft stays untouched.
+YL.collection={
+ W:1000,entries:[],labels:[],pieces:[],H:1000,
+ catalog:[
+  {key:'fold-flower',name:'折剪窗花',theme:'窗上花样',ratio:1},
+  {key:'free-flower',name:'自由窗花',theme:'窗上花样',ratio:1},
+  {key:'wall',name:'陕北长城',theme:'山河往事',ratio:350/108,wide:true},
+  {key:'tower',name:'镇北台',theme:'山河往事',ratio:104/86},
+  {key:'pagoda',name:'延安宝塔',theme:'山河往事',ratio:51/98},
+  {key:'cave',name:'窑洞',theme:'山河往事',ratio:208/114},
+  {key:'tongwan',name:'统万城遗址',theme:'山河往事',ratio:176/80},
+  ...Object.entries({'yangyu':'洋芋擦擦','jianbing':'子长煎饼','sanxian':'榆林拼三鲜','guoxian':'子洲馃馅'}).map(([key,name])=>({key:'food-'+key,name,theme:'陕北人家',ratio:YL.tableArt['food-'+key].width/YL.tableArt['food-'+key].height})),
+  {key:'waist-drum',name:'安塞腰鼓',theme:'纸上鼓乐',ratio:YL.waistArt['waist-drum'].width/YL.waistArt['waist-drum'].height},
+  {key:'suona',name:'陕北唢呐',theme:'纸上鼓乐',ratio:175/112},
+  ...[['cloud','云纹',210/126],['flower','窗花',1],['dancer','舞者',120/184],['fan','扇子',135/101],['ribbon','红绸',176/117]].map(([key,name,ratio])=>({key,name,ratio,theme:'早先剪作'}))
+ ],
+ valid(points){return Array.isArray(points)&&points.length>=3&&points.length<=10000&&points.every(p=>Array.isArray(p)&&p.length===2&&p.every(n=>Number.isFinite(n)&&n>=-2&&n<=3));},
+ cut(key){
+  const d=YL.store.data,meals=[...(d.foodTable?.items||[]),...(d.foodTable?.archivedItems||[])];
+  const record=[d.handCuts?.[key],key==='waist-drum'?d.waistDrum?.cut:null,meals.find(p=>p.key===key)?.cut].find(c=>this.valid(c?.points));
+  if(!record)return null;
+  const c=JSON.parse(JSON.stringify(record));c.path=YL.prologue.poly(c.points);c.holes=(c.holes||[]).filter(p=>this.valid(p));return c;
+ },
+ load(){
+  const d=YL.store.data;this.entries=[];
+  for(const item of this.catalog){
+   if(item.key==='fold-flower'){
+    const cuts=d.foldFlower?.cuts;if(d.foldFlower?.complete&&Array.isArray(cuts)&&cuts.length&&cuts.every(c=>YL.prologue.tasks.some(t=>t.key===c.key)&&this.valid(c.points)))this.entries.push({...item,cuts:JSON.parse(JSON.stringify(cuts))});
+   }else if(item.key==='free-flower'){
+    const cuts=d.freeFlower?.cuts;if(Array.isArray(cuts)&&cuts.length&&cuts.every(p=>this.valid(p)))this.entries.push({...item,cuts:JSON.parse(JSON.stringify(cuts))});
+   }else{const cut=this.cut(item.key);if(cut)this.entries.push({...item,cut});}
+  }
+  this.arrange();YL.collage.blob=null;YL.collage.revoke();
+ },
+ arrange(){
+  this.labels=[{text:'纸上陕北',x:500,y:88,size:62,brush:true},{text:'亲手剪出的作品',x:500,y:144,size:28}];this.pieces=[];this.rules=[];let y=205;
+  for(const theme of ['窗上花样','山河往事','陕北人家','纸上鼓乐','早先剪作']){
+   const entries=this.entries.filter(a=>a.theme===theme);if(!entries.length)continue;
+   this.labels.push({text:theme,x:65,y:y+28,size:30,align:'start',red:true});this.rules.push({x1:218,y1:y+17,x2:935,y2:y+17});y+=54;let column=0;
+   for(const a of entries){
+    if(a.wide&&column){y+=246;column=0;}
+    const cell={x:a.wide?65:65+column*450,y,w:a.wide?870:420,h:a.wide?300:246},maxW=cell.w-36,maxH=cell.h-70,w=Math.min(maxW,maxH*a.ratio),h=w/a.ratio;
+    this.pieces.push({entry:a,box:{x:cell.x+(cell.w-w)/2,y:cell.y+12+(maxH-h)/2,w,h},cell});
+    this.labels.push({text:a.name,x:cell.x+cell.w/2,y:cell.y+cell.h-24,size:27});
+    if(a.wide){y+=cell.h;}else if(column){y+=cell.h;column=0;}else column=1;
+   }
+   if(column)y+=246;y+=26;
+  }
+  if(!this.entries.length){this.labels.push({text:'还没有保存的剪纸作品',x:500,y:330,size:30});y=420;}
+  this.H=y+90;this.labels.push({text:'每一道剪口，都是自己的模样。',x:500,y:this.H-48,size:24});
+ },
+ paint(parent,a,b){
+  const A=YL.art;
+  if(a.key==='fold-flower'){const g=A.svg('g',{transform:`translate(${b.x+b.w/2},${b.y+b.h/2}) scale(${b.w/2})`,'data-origin':'foldFlower'},parent);YL.prologue.flower(g,a.cuts);return g;}
+  if(a.key==='free-flower'){const g=A.svg('g',{transform:`translate(${b.x+b.w/2},${b.y+b.h/2}) scale(${b.w/2})`,'data-origin':'freeFlower'},parent),previous=YL.freeWindow.cuts;try{YL.freeWindow.cuts=a.cuts;for(const matrix of YL.freeWindow.matrices(3))YL.freeWindow.shape(g,matrix);}finally{YL.freeWindow.cuts=previous;}return g;}
+  // Use the food itself, not its replacement served-dish image, so its cut is visible.
+  const g=A.result(parent,a.key,b,a.cut);
+  if(a.key==='cave'&&a.cut.holes.length){const id='collection-cave-'+(++YL.folk.serial),defs=A.svg('defs',{},g),mask=A.svg('mask',{id,maskUnits:'userSpaceOnUse',x:-.1,y:-.1,width:1.2,height:1.2},defs);A.svg('rect',{x:-.1,y:-.1,width:1.2,height:1.2,fill:'white'},mask);for(const hole of a.cut.holes)A.svg('path',{d:YL.prologue.poly(hole),fill:'black'},mask);g.querySelector('image')?.setAttribute('mask',`url(#${id})`);}
+  return g;
+ },
+ draw(board,{labels=true,interactive=false}={}){
+  const A=YL.art;board.replaceChildren();board.setAttribute('viewBox',`0 0 ${this.W} ${this.H}`);YL.prologue.material(board);A.svg('rect',{width:this.W,height:this.H,fill:'#F4EBDD'},board);
+  for(const line of this.rules)A.svg('line',{...line,stroke:'#BC8D4D','stroke-width':1,opacity:.55},board);
+  for(const {entry,box,cell}of this.pieces){const g=A.svg('g',{'data-collection-key':entry.key},board);this.paint(g,entry,box);if(interactive){g.setAttribute('role','button');g.setAttribute('tabindex',0);g.setAttribute('aria-label','放大查看'+entry.name);A.svg('rect',{x:cell.x,y:cell.y,width:cell.w,height:cell.h,fill:'transparent','data-collection-open':entry.key},g);}}
+  if(labels)for(const t of this.labels){const text=A.svg('text',{x:t.x,y:t.y,fill:t.red?'#D83A25':'#24221E','font-size':t.size,'font-family':t.brush?'MaShanZheng':'SourceHanSerif','font-weight':400,'text-anchor':t.align||'middle','pointer-events':'none'},board);text.textContent=t.text;}
+ },
+ preview(key){
+  if(YL.game.paused)return;const a=this.entries.find(a=>a.key===key);if(!a)return;
+  YL.ui.modal({kicker:'亲手剪出的作品',title:a.name,body:'<div id="collection-detail" class="collection-detail"></div>',className:'collection-preview',buttons:[{label:'继续欣赏'}]});
+  const board=YL.art.svg('svg',{viewBox:'0 0 900 680',role:'img','aria-label':a.name+'，保留自己的剪口'},YL.$('#collection-detail'));YL.prologue.material(board);const w=Math.min(820,580*a.ratio),h=w/a.ratio;this.paint(board,a,{x:(900-w)/2,y:(680-h)/2,w,h});
+ },
+ show(){
+  this.load();const C=YL.collage;C.busy=false;C.title='我的陕北剪纸';YL.game.skipper=null;
+  YL.$('#page').innerHTML=`<section class="screen roll-result collection-result"><div class="toolbar">${YL.game.tool('back','返回章节目录','back')}<p class="chapter-label">终章</p>${YL.game.tool('audio','音效开关','audio')}</div><header class="collage-heading"><h1>展开陕北</h1></header><p class="collection-count">${this.entries.length?'已收好 '+this.entries.length+' 件剪纸作品':'先去前面的章节，剪出自己的作品'}</p><div class="collection-viewer" tabindex="0" role="region" aria-label="全部剪纸作品，向下滚动浏览"><svg id="collection-board" role="group" aria-label="我的陕北剪纸作品册"></svg></div><p class="collection-cue">向下滑动浏览 · 点作品看大图</p><div class="result-actions"><button id="save-roll" class="primary">保存全部剪纸</button><button id="share-roll" class="secondary">分享我的剪纸</button><button id="return-cover" class="secondary return-cover">完成体验，回到封面</button></div><p id="export-status" class="export-status" role="status" aria-live="polite">保存为完整长图，保留自己的剪口与花纹。</p></section>`;
+  this.draw(YL.$('#collection-board'),{interactive:true});const scope=YL.game.scope=new YL.Scope();
+  scope.event(YL.$('#collection-board'),'click',e=>{const g=e.target.closest('[data-collection-key]');if(g)this.preview(g.dataset.collectionKey);});
+  scope.event(YL.$('#collection-board'),'keydown',e=>{if(['Enter',' '].includes(e.key)){const g=e.target.closest('[data-collection-key]');if(g){e.preventDefault();this.preview(g.dataset.collectionKey);}}});
+  YL.$('#back').onclick=()=>YL.game.map();YL.game.bindAudio();YL.$('#save-roll').onclick=()=>C.saveImage();YL.$('#share-roll').onclick=()=>C.shareImage();YL.$('#return-cover').onclick=()=>{if(YL.game.paused||C.busy)return;YL.store.finish(YL.chapters[5]);YL.game.home();};
+ },
+ async exportBlob(){
+  const C=YL.collage;if(C.blob)return C.blob;const board=YL.art.svg('svg',{xmlns:YL.art.ns,width:this.W,height:this.H});this.draw(board,{labels:false});const encoded=new Map();
+  await Promise.all([...board.querySelectorAll('image')].map(async node=>{const src=node.getAttribute('href');if(!encoded.has(src))encoded.set(src,fetch(src).then(r=>{if(!r.ok)throw Error('图片素材暂未加载，请重试');return r.blob();}).then(blob=>new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(reader.result);reader.onerror=reject;reader.readAsDataURL(blob);})));node.setAttribute('href',await encoded.get(src));}));
+  const url=URL.createObjectURL(new Blob([new XMLSerializer().serializeToString(board)],{type:'image/svg+xml'}));
+  try{
+   const image=await C.image(url);await Promise.all(this.labels.map(t=>document.fonts.load(`${t.size}px ${t.brush?'MaShanZheng':'SourceHanSerif'}`,t.text)));await document.fonts.ready;
+   const canvas=document.createElement('canvas');canvas.width=2400;canvas.height=Math.round(this.H*2.4);const ctx=canvas.getContext('2d');ctx.scale(2.4,2.4);ctx.drawImage(image,0,0,this.W,this.H);
+   for(const t of this.labels){ctx.fillStyle=t.red?'#D83A25':'#24221E';ctx.textAlign=t.align==='start'?'left':'center';ctx.font=`${t.size}px ${t.brush?'MaShanZheng':'SourceHanSerif'}`;ctx.fillText(t.text,t.x,t.y);}
+   const blob=await new Promise((resolve,reject)=>canvas.toBlob(b=>b?resolve(b):reject(Error('图片生成失败，请重试')),'image/png'));C.blob=blob;return blob;
+  }finally{URL.revokeObjectURL(url);}
+ }
+};
+// The app's last interaction now resolves to the collection; no editor or placement task.
+YL.interact.collection=async()=>{YL.collection.load();};
+YL.collage.showResult=()=>YL.collection.show();
+YL.collage.exportBlob=()=>YL.collection.exportBlob();
+YL.collage.saveImage=async function(){
+ if(this.busy)return;this.busy=true;const run=YL.game.runId,status=YL.$('#export-status');status.textContent='正在收好全部剪纸…';
+ try{const blob=await this.exportBlob();if(run!==YL.game.runId)return;this.revoke();this.url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=this.url;a.download='纸上陕北-我的剪纸作品.png';document.body.append(a);a.click();a.remove();status.textContent='已生成完整长图，可保存后分享给朋友。';YL.ui.modal({kicker:'我的陕北剪纸',title:'收好自己的剪纸',body:`<img class="export-preview" src="${this.url}" alt="包含全部个人剪纸的完整长图"><p>手机可长按图片保存，再与朋友分享。</p>`,buttons:[{label:'继续欣赏'},{label:'打开大图',secondary:true,keep:true,action:()=>window.open(this.url,'_blank','noopener')}]});}catch(e){if(status.isConnected)status.textContent=e.message;}finally{this.busy=false;}
+};
+YL.collage.shareImage=async function(){
+ if(this.busy)return;this.busy=true;const run=YL.game.runId,status=YL.$('#export-status');status.textContent='正在准备分享图片…';
+ try{const blob=await this.exportBlob();if(run!==YL.game.runId)return;const file=new File([blob],'纸上陕北-我的剪纸作品.png',{type:'image/png'});if(navigator.canShare?.({files:[file]})&&navigator.share){await navigator.share({files:[file],title:'我的陕北剪纸',text:'这些是我在《纸上陕北》中亲手剪出的作品。'});status.textContent='剪纸作品已准备好分享。';}else{this.busy=false;await this.saveImage();}}catch(e){if(status.isConnected)status.textContent=e.name==='AbortError'?'剪纸作品还在这里，可随时再次分享。':'暂时无法直接分享，请保存图片后分享。';}finally{this.busy=false;}
+};
+Object.assign(YL.chapters[5],{name:'展开陕北',desc:'我的陕北剪纸',gain:'陕北剪纸',end:'每一道剪口，都是自己的模样。',steps:[{type:'say',text:'窗上的花，山间的城，桌上的饭食，院中的鼓乐。一张张纸，留下了这一程的见闻。'},{type:'say',text:'把亲手剪出的作品一一展开。那些转弯、留白和镂空，都是你落下的剪口。收好它们，也把陕北的故事分享出去。'},{type:'collection'}]});
+const collectionMap=YL.game.map.bind(YL.game);YL.game.map=async function(){await collectionMap();const row=YL.$('[data-chapter="5"]');if(row){row.querySelector('small').textContent='终章 · 我的陕北剪纸';row.querySelector('img').src='assets/v4/redpaper.webp?v=20261018-web3';row.querySelector('img').alt='陕北剪纸作品册';}};
+YL.v3.help=function(){YL.ui.modal({kicker:'纸上陕北',title:'从剪口走进地方生活',body:'<p>序章折剪窗花；第一章走近长城、镇北台、延安宝塔与窑洞；第二章剪出洋芋擦擦和子长煎饼，盛上餐桌；再去体验安塞腰鼓，听陕北唢呐。</p><p>沿线可从两个方向起剪，松手可以续剪，右上角可辅助完成。文化知识和热点可选阅读，出处在卡片下方。终章自动收好全部剪纸，保留自己的剪口，可以保存完整长图并分享。进度保存在当前浏览器。</p>',buttons:[{label:'继续体验'}]});};
+
+
+'use strict';
+YL.flow={version:'20261021-collection1'};
 YL.scroll.version=YL.flow.version;
 // Chapters four and five share the same paper-page entrance as the earlier chapters.
 const flowStart=YL.game.start.bind(YL.game);

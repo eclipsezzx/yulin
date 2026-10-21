@@ -2,13 +2,12 @@
 // Only the cover, shared presentation, prologue transitions and chapter one are revised.
 YL.heritage={
  version:'20261015-heritage1',active:false,
- chapter:{id:1,no:'第一章',name:'剪出陕北',gain:'长城·高台·白城·宝塔·窑洞',motif:'tower'},
+ chapter:{id:1,no:'第一章',name:'剪出陕北',gain:'长城·高台·宝塔·窑洞',motif:'tower'},
  places:[
-  {key:'wall',name:'陕北长城',place:'陕北 · 跨县分布',box:{x:32,y:367,w:311,h:103},card:'h-wall',tag:'随山势起伏的城墙',before:'山梁连着山梁，城墙沿着高处走。在陕北，长城跨过不同县域。剪刀也随山势转折，把墙线的起落留在纸上。',after:'墙线一段高，一段低，顺着山脊向远处伸去。长城的轮廓里，藏着这片土地的起伏。',hint:'从红点起剪，沿垛口与墙线绕回起点'},
-  {key:'tower',name:'镇北台',place:'榆林市 · 榆阳区',box:{x:70,y:329,w:235,h:193},card:'h-tower',tag:'高台与边地往来',before:'榆阳区的红山上，镇北台层层收拢，望向远处的长城。沿着台身转折落剪，宽厚的基座托起上面的高台。',after:'四层台身越往上越小，高台曾用于瞭望与防守。附近的款贡城、易马城，还留下了边地接待、商洽与互市的往事。',hint:'沿四层台体剪出收分，转角处慢一点'},
-  {key:'tongwan',name:'统万城遗址',place:'榆林市 · 靖边县',box:{x:35,y:364,w:305,h:138},card:'h-tongwan',tag:'靖边的白城子',before:'靖边县，白城子。统万城曾是大夏都城，如今城垣与墩台仍留在无定河北岸。剪刀绕过高低不齐的残墙，留住它今天的模样。',after:'墙的边缘已经残损，偏白的夯土却仍醒目。这次不把缺口补齐：遗址留下的痕迹，正是认识它的线索。',hint:'跟随残墙起伏剪，保留不规则的墙影'},
-  {key:'pagoda',name:'延安宝塔',place:'延安市 · 宝塔区',box:{x:129,y:311,w:117,h:224},card:'h-pagoda',tag:'古塔与延安的记忆',before:'宝塔区的宝塔山上，九层砖塔向天空收拢。沿着一层层檐线往上剪，塔身渐渐挺立，和刚才宽厚的镇北台有了不同的身影。',after:'延安宝塔是八角九层的砖塔。古塔历经修葺，也成为革命圣地延安的标志；同一个轮廓，承载着不同时代的记忆。',hint:'沿九层檐线起落剪，留出渐收的塔身'},
-  {key:'cave',name:'陕北窑洞',place:'陕北 · 多县沿用的传统民居',box:{x:36,y:350,w:303,h:166},card:'h-cave',tag:'黄土里的人家',before:'从古城高台走回山坡，人家就在黄土之间。陕北多地的窑洞依势而建，有的靠崖开挖，有的以砖石箍起拱顶。先剪出院前这一片山形。',after:'拱口留住门窗，厚土围合居室。窑洞冬暖夏凉，是人们顺着地形、就着材料安顿生活的办法。黄土高原的故事，也在这些日常里。',hint:'沿黄土坡与院落轮廓剪出窑洞'}
+  {key:'wall',name:'陕北长城',place:'陕北 · 跨县分布',box:{x:32,y:367,w:311,h:103},card:'h-wall',tag:'随山势起伏的城墙',before:'山梁连着山梁，长城随高处伸展。沿垛口与墙线落剪，留下起伏的轮廓。',after:'陕北长城分布于多个县区，许多墙段就地取土、层层夯筑，与楼台关堡相互配合。',hint:'从红点起剪，沿垛口与墙线绕回起点'},
+  {key:'tower',name:'镇北台',place:'榆林市 · 榆阳区',box:{x:70,y:329,w:235,h:193},card:'h-tower',tag:'高台与边地往来',before:'榆阳区红山上，镇北台四层收拢。沿台身转角落剪，留下宽基座与高台。',after:'镇北台曾用于瞭望与防守；附近的款贡城、易马城，见证着边地的商洽与互市。',hint:'沿四层台体剪出收分，转角处慢一点'},
+  {key:'pagoda',name:'延安宝塔',place:'延安市 · 宝塔区',box:{x:129,y:311,w:117,h:224},card:'h-pagoda',tag:'古塔与延安的记忆',before:'宝塔区的宝塔山上，九层砖塔向上收拢。沿一层层檐线起剪，让塔身挺立。',after:'延安宝塔八角九层，既留着古城的历史，也成为革命圣地延安的标志。',hint:'沿九层檐线起落剪，留出渐收的塔身'},
+  {key:'cave',name:'陕北窑洞',place:'陕北 · 多县沿用的传统民居',box:{x:36,y:350,w:303,h:166},card:'h-cave',tag:'黄土里的人家',before:'窑洞依坡而建。沿土崖与院墙，剪出山里的人家。',after:'靠崖开挖，或以砖石箍起拱顶。厚实的窑壁有助于调节室温，安顿黄土坡上的日常。',hint:'沿黄土坡与院落轮廓剪出窑洞'}
  ],
  links(items){return '<p class="source-links">'+items.map(([name,url])=>`<a href="${url}" target="_blank" rel="noopener">${name}</a>`).join('')+'</p>';},
  shell(){
@@ -40,7 +39,7 @@ YL.heritage={
  },
  // The doorway is genuinely removed from the cut image. The accepted hand trace is the mask edge.
  async arch(p,scope){
-  await this.text('再剪开中间的窑门。直边向上，弧线合拢；一道拱口，把山坡里的居室显了出来。',scope);
+  await this.text('再沿拱口剪开窑门，让光透进山坡里的人家。',scope);
   const A=YL.art,svg=YL.game.svg,g=YL.$('[data-object="cave"]'),b=p.box,cut=YL.game.cuts.cave;
   const box={x:b.x+b.w*.50,y:b.y+b.h*.43,w:b.w*.095,h:b.h*.405},d=`M${box.x} ${box.y+box.h}V${box.y+box.w/2}a${box.w/2} ${box.w/2} 0 0 1 ${box.w} 0V${box.y+box.h}Z`;
   const gate=A.svg('g',{'data-heritage':'arch'},svg),cover=A.svg('path',{d,fill:'url(#redPaper)'},gate),guide=A.svg('path',{d,class:'cut-guide',fill:'none'},gate),l=guide.getTotalLength(),baseRefs=Array.from({length:161},(_,i)=>guide.getPointAtLength(l*i/160));let refs=baseRefs,direction=0;gate.dataset.cutDirection="pending";const start=refs[0],dot=A.svg('circle',{cx:start.x,cy:start.y,r:5,class:'start-dot'},gate),seam=A.svg('path',{fill:'none',stroke:'#F4EBDD','stroke-width':1.6},gate),scissors=YL.prologue.cursor(gate,start.x,start.y);let idx=0,trace=[],tip=start,down=false,id=null,finished=false,bad=0;
