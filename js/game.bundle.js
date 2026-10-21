@@ -1475,7 +1475,7 @@ YL.v3.help=function(){YL.ui.modal({kicker:'纸上陕北',title:'把故事带回�
 
 
 'use strict';
-// A collection of the player's saved cuts. The former collage draft stays untouched.
+// Only the current journey's saved cuts are exhibited. Older records stay untouched.
 YL.collection={
  W:1000,entries:[],labels:[],pieces:[],H:1000,
  catalog:[
@@ -1485,11 +1485,9 @@ YL.collection={
   {key:'tower',name:'镇北台',theme:'山河往事',ratio:104/86},
   {key:'pagoda',name:'延安宝塔',theme:'山河往事',ratio:51/98},
   {key:'cave',name:'窑洞',theme:'山河往事',ratio:208/114},
-  {key:'tongwan',name:'统万城遗址',theme:'山河往事',ratio:176/80},
-  ...Object.entries({'yangyu':'洋芋擦擦','jianbing':'子长煎饼','sanxian':'榆林拼三鲜','guoxian':'子洲馃馅'}).map(([key,name])=>({key:'food-'+key,name,theme:'陕北人家',ratio:YL.tableArt['food-'+key].width/YL.tableArt['food-'+key].height})),
+  ...YL.food.dishes.map(d=>({key:d.key,name:d.name,theme:'陕北人家',ratio:YL.tableArt[d.key].width/YL.tableArt[d.key].height})),
   {key:'waist-drum',name:'安塞腰鼓',theme:'纸上鼓乐',ratio:YL.waistArt['waist-drum'].width/YL.waistArt['waist-drum'].height},
-  {key:'suona',name:'陕北唢呐',theme:'纸上鼓乐',ratio:175/112},
-  ...[['cloud','云纹',210/126],['flower','窗花',1],['dancer','舞者',120/184],['fan','扇子',135/101],['ribbon','红绸',176/117]].map(([key,name,ratio])=>({key,name,ratio,theme:'早先剪作'}))
+  {key:'suona',name:'陕北唢呐',theme:'纸上鼓乐',ratio:175/112}
  ],
  valid(points){return Array.isArray(points)&&points.length>=3&&points.length<=10000&&points.every(p=>Array.isArray(p)&&p.length===2&&p.every(n=>Number.isFinite(n)&&n>=-2&&n<=3));},
  cut(key){
@@ -1511,7 +1509,7 @@ YL.collection={
  },
  arrange(){
   this.labels=[{text:'纸上陕北',x:500,y:88,size:62,brush:true},{text:'亲手剪出的作品',x:500,y:144,size:28}];this.pieces=[];this.rules=[];let y=205;
-  for(const theme of ['窗上花样','山河往事','陕北人家','纸上鼓乐','早先剪作']){
+  for(const theme of ['窗上花样','山河往事','陕北人家','纸上鼓乐']){
    const entries=this.entries.filter(a=>a.theme===theme);if(!entries.length)continue;
    this.labels.push({text:theme,x:65,y:y+28,size:30,align:'start',red:true});this.rules.push({x1:218,y1:y+17,x2:935,y2:y+17});y+=54;let column=0;
    for(const a of entries){
@@ -1584,7 +1582,7 @@ YL.v3.help=function(){YL.ui.modal({kicker:'纸上陕北',title:'从剪口走进�
 
 
 'use strict';
-YL.flow={version:'20261021-collection1'};
+YL.flow={version:'20261021-collection2'};
 YL.scroll.version=YL.flow.version;
 // Chapters four and five share the same paper-page entrance as the earlier chapters.
 const flowStart=YL.game.start.bind(YL.game);
